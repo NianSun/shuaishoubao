@@ -8,11 +8,12 @@
 .menu_edit{float: right;;}
 .menu_div_p{margin:0;padding: 0;}
 .menu_add{float: right;}
-.menu_bottom{border: -1px solid red;position: fixed;bottom:0;background-color: #fff;}
-.menu_delete{margin-left: 20px;border: -1px solid #AAA;}
+.menu_bottom{border: -1px solid red;position: fixed;bottom:0;background-color: #eee;display: flex;align-items: center;justify-content: space-around;text-align: center;border-top: 1px solid -#aaa;}
+.menu_delete{margin-left: ;border: -1px solid #AAA;}
 .input_select_small{display: none;float: right;}
 .model_css{background-color: #000;opacity: 0.5;position: fixed;width: 100%;height: 100%;}
-.div_table{background-color: #fff;position: fixed;text-align: center;width: 90%;left: 5%;height: 70%;bottom: 15%;}
+.div_table{background-color: #fff;position: fixed;text-align: center;width: 90%;left: 5%;top:10%;padding-bottom: 5%;}
+.menu_bottom span{width: 25%;border-left: -1px solid #aaa;}
 .input_name{width: 90%;margin: auto;border: 1px solid #AAA;}
 #input_name{width: 60%;margin: 0;border: 0;padding: 0;height:90%;}
 .input_price{width: 90%;margin: auto;border: 1px solid #AAA;}

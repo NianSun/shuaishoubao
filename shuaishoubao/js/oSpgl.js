@@ -89,14 +89,14 @@ function adaptation(){
 	$('.menu_bottom').css({'height':v_Height*0.07,'padding':v_Height*0.01,'width':v_Width});
 	$('.btn_menu').css({'font-size':v_Height*0.02});
 	$('.input_select').css({'width':v_Height*0.03,'height':v_Height*0.03,'margin-to p':v_Height*0.045});
-	$('.menu_delete').css({'width':v_Height*0.14});
+//	$('.menu_delete').css({'width':v_Height*0.14});
 	$('#all_select').css({'margin-top':v_Height*0.003});
 	$('.main_div_big').css({'margin-bottom':v_Height*0.07});
-	$('.div_table').css({'font-size':v_Height*0.04,'border-radius':v_Height*0.03,'height':v_Height*0.7});
+	$('.div_table').css({'font-size':v_Height*0.04,'border-radius':v_Height*0.03});
 	$('.table_title').css({'margin-top':v_Height*0.05,'margin-bottom':v_Height*0.02});
 	$('.input_name').css({'font-size':v_Height*0.024,'height':v_Height*0.06,'padding':v_Height*0.01,'border-radius':v_Height*0.06,'line-height':v_Height*0.04+'px','margin-bottom':v_Height*0.02});
 	$('.input_price').css({'font-size':v_Height*0.024,'height':v_Height*0.06,'padding':v_Height*0.01,'border-radius':v_Height*0.06,'line-height':v_Height*0.04+'px'});
-	$('.table_name').css({'font-size':v_Height*0.02,'margin':v_Height*0.04});
+	$('.table_name').css({'font-size':v_Height*0.02,'margin':v_Height*0.01});
 	$('.table_btn').css({'margin-top':v_Height*0.02});
 	$('.span_delete').css({'font-size':v_Height*0.026,'border-radius':v_Height*0.01});
 	$('.span_save').css({'font-size':v_Height*0.026,'border-radius':v_Height*0.01});

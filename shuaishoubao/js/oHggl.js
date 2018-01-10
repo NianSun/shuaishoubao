@@ -1,29 +1,5 @@
 $(function(){
-		adaptation();
-
-	
-	//单击增加数量
-//	$('.span_add').click(function(){
-//
-//		var number=parseInt($(this).parent().find('span').eq(1).text());		//取出要加的数字
-//		number++;
-//		$(this).parent().find('span').eq(1).text(number);
-//	});
-	//单击减少数量
-//	$('.span_re').click(function(){
-//
-//		var number=parseInt($(this).parent().find('span').eq(1).text());		//取出要减的数字
-//		number--;
-//		
-//		if(number<=0){															//判断是否要减得数比0小
-//			number=0;
-//		}
-//		$(this).parent().find('span').eq(1).text(number);
-//	}); 
-	//单击出现编辑按钮 一键上货
-	
-	//点击编辑存货量
-	
+		adaptation();	
 	var iNow=null;
 	
 	$(".span_group").click(function(){											//点击存货框
@@ -113,6 +89,20 @@ $(function(){
 		
 		$(this).parent().find('span').eq(4).text(number);
 	});
+	
+	//点击解绑补货员
+	
+	$(".jiebang").click(function(){
+		alert('数据库删除绑定信息');
+	});
+	//点击更换补货员
+	
+	$(".genghuan").click(function(){
+		window.location.href="oBhy.html?传递参数=改变按钮状态-改变状态按钮-";
+	});
+	
+	
+	
 });
 function adaptation(){
 	var v_Height=$(window).height();

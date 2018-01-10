@@ -48,7 +48,7 @@ function adaptation(){
 	var v_Height=$(window).height();
 	var v_Width=$(window).width();
 	
-	$("body").css({'font-size':v_Width*0.03});
+	$("body").css({'font-size':v_Width*0.04});
 	var vw=$('.wenti').width();
 	$('.wenti').css({'height':vw,'border-radius':vw,'width':vw,'line-height':vw+'px'})
 };
