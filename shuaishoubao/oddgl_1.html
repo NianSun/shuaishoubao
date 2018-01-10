@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>订单管理</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/oDdgl.css">
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/echarts.simple.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/manhuaDate.1.0.css">
+<script type="text/javascript" src="js/manhuaDate.1.0.js"></script>
+<script type="text/javascript" src="js/oDdgl.js"></script>
+<body>
+	<div class="div_head">
+		<div class="head_sub">
+			<span class="head_top">订单总数</span>
+			<span class="head_bottom">5555555</span>
+		</div>
+		<div class="head_sub head_sub_middle">
+			<span class="head_top">订单金额（元）</span>
+			<span class="head_bottom">0.50</span>
+		</div>
+		<div class="head_sub">
+			<span class="head_top">实际收益（元）</span>
+			<span class="head_bottom">0.50</span>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	<div class="Dd_title">近一周订单数</div>
+	<div id="main"></div>
+	<div class="div_list">
+		<div class="list_title">订单列表</div>
+		<div class="list_date">
+			<span class="date_list">昨天</span>
+			<span class="date_list date_active">今天</span>
+			<span class="date_list">近一周</span>
+			<span class="date_list">近一月</span>
+			<span class="date_list">自定义时段</span>
+			<div class="clear_both"></div>
+		</div>
+		
+		<div class="list_big">
+			<div class="show_list">
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545测试第一个</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+			</div>
+			<div  class="show_list show_active">
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545测试第二个</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+			</div>
+			<div class="show_list">
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545 测试第三个</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+			</div>
+			<div class="show_list">
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545 测试第四个</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+			</div>
+			<div class="show_list">
+				<div class="rili_div">
+					<span class="font_span">开始</span>
+					<input type="text" class="mh_date" readonly="true" />
+				</div>
+				<div class="rili_div">
+					<span class="font_span">结束</span>
+					<input type="text" class="mh_date2" readonly="true" />
+				</div>
+				
+				<div class="search_btn">查询</div>
+				<div class="list">
+					
+					
+	
+					
+					
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545测试第五个</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+				<div class="list">
+					<div class="sub_list sub_list_top">
+						<span>订单号:&nbsp;&nbsp;</span>
+						<span>20174545454545</span>
+					</div>
+					<div class="sub_list sub_list_middle">
+						<div>
+							<span>购买信息:&nbsp;&nbsp;</span>
+							<span>充电</span><span>1分钟</span>
+						</div>
+						<div>
+							<span>时间:&nbsp;&nbsp;</span>
+							<span>2017-12-26 16:02</span>
+						</div>
+					</div>
+					<div class="sub_list sub_list_bottom">
+						<span>微信支付:&nbsp;&nbsp;</span>
+						<span class="money_span">¥5000</span>
+						<span>分成收益:&nbsp;&nbsp;</span>
+						<span class="money_span">¥500</span>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>

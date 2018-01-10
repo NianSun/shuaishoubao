@@ -1,0 +1,19 @@
+.main_div_css{border: -1px solid #434887;text-align: center}
+.main_top{height: 50%;width: 100%;background-color: -#AAA}
+.main_top_left{float: left;width: 25%;border: -1px solid red;height: 100%}
+.main_top_center{float: left;width: 50%;border: -1px solid red;height: 100%}
+.main_top_right{float: right;width: 25%;border: -1px solid red;height: 100%}
+.main_top_left_up{float: left;width: 100%;border: -1px solid red;height: 50%}
+.main_top_left_down{float: left;width: 100%;border: -1px solid red;height: 50%}
+.main_top_center_up{float: left;width: 100%;border: -1px solid red;height: 75%;background-image: url('../images/bian.png');background-position: 1% 50%;background-repeat: no-repeat;background-size: 100%}
+.main_top_center_up img{width: 70%}
+.main_top_center_down{float: left;width: 100%;border: -1px solid red;height: 25%}
+.main_top_right_up{float: left;width: 100%;border: -1px solid red;height: 50%;}
+.main_top_right_down{float: left;width: 100%;border: -1px solid red;height: 50%}
+.main_top img{width: 70%}
+.main_center{width: 80%;margin:auto;border-top: 2px solid #AAA;border-bottom: 2px solid #AAA;height: 15%}
+.main_center_left{width: 50%;margin:auto;border-right:  2px solid #AAA;height: 100%;float: left;}
+.main_center_right{width: 50%;margin:auto;height: 90%;float: left;}
+.main_center_p{color:rgb(138, 204, 202);}
+.main_bottom{height: 30%;border: -1px solid red;margin-top: 5%}
+/*.main_bottom img{height: 65%;}*/

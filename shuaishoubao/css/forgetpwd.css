@@ -1,0 +1,10 @@
+.main_css{text-align: center;position: fixed;color: #AAA;}
+.bg_css{position: fixed;z-index: -8;}
+.div_small{border: 1px solid #269ABC;background-color:;width: 80%;margin: auto;overflow: hidden;margin-bottom: 5%;font-size: 1.6em;}
+input{border: 0; padding: 0;margin: 0;background: transparent;width: 100%;margin: auto;color: #757575;}
+.code_css{width:60%;padding-right: 0;}
+.btn_div{width: 40%;height: 100%;border-left: 1px solid #269ABC;float: right;text-align: center;}
+.btn-warning2{background-color: -#DBEFF3;border: -1px solid #269ABC;height: 100%;width: 100%;color:#757575 ;font-size: 1em;}
+.submit_btn{text-align: center;}
+.submit_btn_tj{width: 80%;background-color: -#DBEFF3;left: 10%;color: #757575;border: 1px solid #269ABC;display: block;margin-left: 10%;font-size: 3em;}
+/*#dbeff3*/

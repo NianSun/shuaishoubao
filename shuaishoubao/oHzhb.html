@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>合作伙伴</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/oHzhb.css">
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/oHzhb.js"></script>
+<body>
+<div class="div_main_css">
+	<!--判断bg_img是否需要显示  if合作伙伴为0则显示，否则不显示  display  为none-->
+	<img src="images/nofrien.png" class="bg_img"/>
+	<div class="search_css">
+		<div class="input-group">
+			<span class="input-group-addon search_span"><span class="glyphicon glyphicon-search "></span></span>
+            <input type="text" class="form-control search_input" placeholder="搜索合作伙伴">
+            <span class="input-group-addon search_filter">
+	           	<span id="friend_choice_span" class="glyphicon glyphicon-filter ">我加TA</span>
+       		</span>
+		</div>
+	</div>
+
+	<div class="add_friend">
+		<button class="btn add_btn">添加合作伙伴</button>
+	</div>
+		<div id="model_big">
+			<div class="model_css"></div>
+			<div class="friend_choice">
+				<p id="friend-all" class="friend_p">全部</p>
+				<span class="line_span"></span>
+				<p id="friend-me" class="friend_p">我加TA</p>
+				<span class="line_span"></span>
+				<p id="friend-ta" class="friend_p">TA加我</p>
+			</div>
+		</div>	
+		
+		<div class="add_friend_css">
+			<div class="model_css"></div>	
+			<div class="add_friend_table">
+				<p class="add_friend_title">添加合作伙伴</p>
+				<span class="line_span"></span>
+				<div class="add_div_input">
+					<span class="add_div_span">账号：</span>
+					<input class="friend_input" type="text" placeholder="请输入合作伙伴的注册手机号" name="" id="friend_number" value="" />
+				</div>
+				<div class="add_div_input">
+					<span class="add_div_span">分成：</span>
+					<input class="friend_input"  type="text" placeholder="请输入合作伙伴的分成比例" name="" id="friend_number" value="" />%
+				</div>
+				<div class="add_div_input">
+					<span class="add_div_span">备注：</span>
+					<input class="friend_input"  type="text" placeholder="请输入合作说明" name="" id="friend_number" value="" />
+				</div>
+				<button class="btn add_friend_btn">添加</button>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{background-color: #ededed;color: #AAA;}
+.div_big{background-color: -#ededed;text-align: center;}
+.div_top{background-color: #fff;width: 100%;padding-left: 10%;text-align: left;}
+.div_menu{margin-top: 3%;background-color: #fff;border: -1px solid red }
+.div_menu_left{width: 70%;border: -1px solid red;float: left;height: 100%;margin-left: 10%;text-align: left;}
+.div_menu_right{width: 10%;border: -1px solid red;float: left;height: 100%}
+.div_menu_name{color: #000}
+#add_address{background-color: #bde3eb;height: 80%;width: 60%;color: #2b8a9e}
+.add_address{position: fixed;width: 100%;}
+.div_model_css{background-color: #000;position: fixed;top: 0;opacity: 0.3}
+.div_add{background-color: #FFF;position: fixed;top: 20%;left: 10%;color: #000}
+.line_span{border-top: 1px solid #aaa;width: 80%;height: 0px;display: block;margin:auto;}
+.input_css input{border:0px;padding: 0px;margin:0px;height: 94%;width: 60%;margin-top:0.5%;}
+.input_css{border: 1px solid #AAA;width: 80%;margin:auto;margin-bottom: 10%;margin-top: 10%;height: 11%}
+#add_btn_post{width: 40%;background-color:#bde3eb;color:#2b8a9e;height: 10%}
+.close_span{position: absolute;top: 3%;right: 6%;}
+.div_model{display: none}

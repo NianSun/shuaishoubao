@@ -1,0 +1,42 @@
+.index_main_css{text-align: center;color: #ededed;cursor: pointer;overflow: hidden;background-color: -#EDEDED;width: 100%;}
+/*body{overflow: hidden;}*/
+.theme_css{background-image: url(../images/bg_02.png);background-size: 100% 100%;width: 100%;display: flex;align-items: center;justify-content: center;}
+.sub_theme{color: #000;border-bottom: 1px solid #AAA;border-top: px solid #AAA}
+.sub_theme_left{width: 50%;float: left;height: 100%;border-right: 1px solid #AAA}
+.sub_theme_right{width: 50%;float: right;height:100%;}
+.menu_css{}
+.img_menu{border:-1px solid #AAA;}
+.sub_menu{float: left;border:-1px solid #AAA;padding: 10px;background-color: -#FFF}
+.nav_css{background-color: #3e3e3e;position: fixed;bottom: 0;width: 100%;}
+.sub_nav{width: 33.3333%;height: 100%;float: left;}
+#nav_left{display: flex;justify-content: center;align-items: center;flex-direction: column;}
+#nav_right{display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.p1_css{font-size: 4em;}
+.p2_css{font-size: 0.8em;}
+.p3_css{font-size: 1.2em;}
+.p4_css{font-size: 0.8em;}
+.p5_css{font-size: 1em;}
+.p6_css{font-size: 1.2em;}
+.p7_css{font-size: 1.2em;}
+.p6s_css{font-size: 0.7em;}
+.p7s_css{font-size: 0.7em;}
+p{margin:0}
+.saoma_css{width: 130%;height: 130%;position: relative;top:-30%;left: -15%}
+.touxiang_css{margin-top: 10%;}
+.jiantou{font-size: 1em;margin-top: 10%;}
+.active{color:#8accca;}
+.wode{display: none;text-align: center;}
+.wode_menu{margin: auto;background-color: #ededed;}
+.sub_wode_menu{border-bottom: 1px solid #AAA;background-color: #ffffff;line-height: ''}
+.wode_menu_big{background-color: #ededed;color: #000;margin-bottom: 0%;width: 100%;}
+.sub_wode_menu_last{border-bottom: 0px solid #AAA}
+.sub_title{text-align: left;float: left;padding-left: 20px;}
+.sub_more{text-align: right;float: right;padding-right: 20px;}
+.sign_out{border:1px solid #a4d9df;background-color: #b5e1e4;font-size: 1em;color: #ff0036;width: 60%;}
+.renzheng_css{background-color:#fff;display: block;position: absolute;right:0;color: #000;text-align: left;top: 10%;padding: 1% 8% 1% 5% ;right: -5%;font-size: 0.6em;}
+.sub_menu p{margin: 0;}
+.model_css{background-color: #000;opacity: 0.5;width: 100%;height:112%;position: fixed;}
+.model_big{position: absolute;top: 0;text-align: center;display: none;}
+.model_table{background-color: #fff;position: fixed;z-index: 20;padding-bottom: 5%;}
+#user_name{border: 1px solid #aaa;padding: 0;border-radius: 10px;}
+.btn-quxiao{border: 1px solid #AAA;}

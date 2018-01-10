@@ -1,0 +1,23 @@
+.oTxgl_main_css{text-align: center;color: #ededed;cursor: pointer;overflow: -hidden;}
+.oTxgl_theme_css{background-image: url(../images/bg_02.png);background-size: 100% 100%}
+.btn_tx{background-color: #bde4eb;width: 30%;}
+.oTxgz_css{position: absolute;right: 5%}
+.oTxjl_css{background-color: #ededed;color: #AAA;text-align: left;padding-left: 10%}
+.oTxjl_main_css{color: #AAA;border-bottom: 1px solid #AAA;width: 80%;margin: auto}
+.oTxjl_img_css{height: 80%}
+.oTxjl_left{width: 30%;border:-1px solid red;float: left;height: 100%;text-align: right;}
+.oTxjl_middle{width: 30%;border:-1px solid red;float: left;height: 100%}
+.oTxjl_right{width: 40%;border:-1px solid red;float: left;height: 100%;text-align: -left;}
+.oTxgz_img_css{position: absolute;z-index: 20;display: none;}
+.oTxgz_img_div_css{position: absolute;background-color: #000;display:block;top: 0;left:0;opacity: 0.2 }
+.txgz_img{position: absolute;top: 0}
+.close_css{color: #AAA;position: absolute;z-index: 20}
+/*oTxglto的css代码*/
+.Div_big_css{text-align: center;}
+.Div_up_css{}
+.Div_middle_css{border-bottom: 1px solid #aaa;width: 90%;margin: auto;}
+.Div_down_css{}
+.Div_middle_up{border-top:1px solid #aaa;width: 100%;height:33.3333%;line-height: 33.333333%;}
+.Div_middle_up_img{height: 100%;float: left;margin-left: 4%}
+.middle_right_TB{margin-right:  4%;float: right}
+.Div_down_img_css{width: 100%}

@@ -1,0 +1,43 @@
+.main_div_css{border: -1px solid #aaa;margin:auto;text-align: center;height: 100%;color: #2b8a9e;}
+.menu_css{float: left;border: 1px solid #AAA;padding: 3%}
+.menu_css img{width: 100%;height: 60%;border :-1px solid red;top: ;position: relative;}
+.menu_css span{text-align: center;display: -block;height: 100%;}
+.span_name{position: relative;top:;display: block;}
+.span_add{float: ;margin-right: ;}
+.span_re{float: -left;margin-left: }
+.span_number{display: -block;width: ;margin: 0;padding: 0;border:0;float: -left}
+.span_group{margin:auto;display: block;border: 1px solid #f3c21d;width: 80%;height: 16%;text-align: center;color: #f3c21d;}
+.span_price{color: red}
+.span_font{font-size: 0.7em;color: #000;display: block;}
+.font_number{position: absolute;left: 0 }
+.menu_css input{top: 0;left: 0;}
+.checkbox_css{display: none;background-color: #bde3eb;}
+.btn_bottom{position: fixed;border: -1px solid #AAA;bottom: 0px;background-color: #ededed;z-index: 20;}
+.btn_bottom span{display: flex;height: 100%;align-items: center;justify-content: center;font-size: 1.5em;}
+.btn_edit{width: 33%;float: left;}
+#one_btn{width: 34%;float: left;}
+#one_ycch{width: 33%;float: left;}
+.btn-group{width: 100%;height: 100%;}
+.ycch{width: 80%;display: none; background-color: #f05f70;color: #fff;}
+.btn-group button{background-color: #ededed;}
+.id_class{position: relative;padding:;height: ;width: auto;background-color: #f05f70;left: 0;top: 0px;border:-1px solid #aaa;float: left;display: flex;justify-content: center;align-items: center;border-radius: 50px;color: #fff;z-index: 10;}
+.btn_ycch{border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+.Bhy_css{height: 10%;border-bottom:1px solid #aaa;font-size: 1.6em;margin:2% 0 0% 0;}
+/*.Touxiang{padding-top:%;height: 20px;}*/
+.Bhy_css img{height:100%;margin-left: 2%;}
+.span_btn{padding: 1% 3% 1% 3%;}
+.jiebang{border:1px solid #f05f70;color: #f05f70;border-radius: 40px;float: right;margin-top: 1%;}
+.genghuan{background-color: #f3c21d;color: #fff;border-radius: 40px;border:1px solid #f3c21d;float: right;margin-left: 4%;margin-right: 4%;margin-top: 1%;}
+.edit{}
+.model_big{position: fixed;width: 100%;height: 100%;z-index: 30;top: 0;border: -1px solid red;font-size: 2em;text-align: center;display: none;}
+.model{width: 100%;height: 100%;opacity: 0.6;background-color: #000;position: fixed;top: 0;}
+.model_group{background-color: #fff;position:fixed;margin-left: 15%;width: 70%;margin-top: 30%;height: -60%;border-radius: 20px;}
+.model_name{border-bottom: 1px solid #aaa;width: 80%;margin-left: 10%;padding-top: 5%;padding-bottom: 5%;margin-bottom: 5%;}
+.input_css{width: 40%;text-align: center;border: 0;border: 1px solid #aaa;padding: 3% 0 3% 0;font-size: 0.8em;}
+/*.bixu{color: red;left: 22%;top:36%}*/
+.model_input{margin:13% auto 13% auto}
+.model_btn_group{border: -1px solid red;display: flex;justify-content: space-around;font-size: 0.8em;margin-bottom: 10%;}
+.model_btn_group span{border: -1px solid red;padding: 2% 10% 2% 10%;border-radius: 90px;color: #fff;}
+.model_save{background-color: #f05f70;}
+.model_del{background-color: #f3c21d;}
+

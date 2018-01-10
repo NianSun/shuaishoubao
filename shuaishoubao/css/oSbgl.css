@@ -1,0 +1,16 @@
+body{background-color: #ededed}
+.main_div_css{border:-1px solid #AAA;padding: 0;margin: 0;background-color: #ededed;z-index: 2}
+.menu_p_css{}
+.btn_menu{width: 33.3333333%;margin: 0;padding: 0;border: 0}
+.drop_menu{left: 0;position: absolute;margin: 0}
+.btn_group_small{width: 100%;box-shadow: ;border: 0;overflow: hidden;}
+.btn_group_big{margin: 0;z-index: 3}
+/*.ul_li_a{padding-right:  2px}*/
+.glyphicon-ok{float: right;display: none;}
+.bj_css{width: 100%;position: absolute;top: 0px;z-index: ;display: none;}
+.main_menu_css{background-color: -#AAA;position: absolute;width: 100%;z-index: 4}
+.main_menu_small{width: 33.3333%;position: -absolute;top: 20px;border: -1px solid red;float: left;text-align: center;}
+.glyphicon-chevron-down{float: right;}
+.menu_img{width: 90%}
+.menu_p_css{}
+.Return_Top{position: fixed;width: -100px;height: -100px;border: -1px solid red;right: 0px;bottom: 0px;background-color: #aaa;background-size: 100% 100%;text-align: center;z-index: 20;opacity: 0.5};

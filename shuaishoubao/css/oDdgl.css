@@ -1,0 +1,25 @@
+.div_head{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;text-align: center;margin-top: 3%;width: 94%;margin-left: 3%;margin-bottom: 6%;}
+.head_sub{border: -1px solid #ccc;width: 33.3333%;float: left;margin-top: 3%;margin-bottom:3% ;}
+.head_top{display: block;font-weight: bold;}
+.head_sub_middle{border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+.clear_both{clear: both;}
+#main{width: 100%;height: 300px;}
+.Dd_title{width: 90%;margin-left: 5%;margin-top: 4%;font-size: 1.4em;font-weight: bold;}
+.div_list{width: 100%;border: -1px solid red;}
+.list_title{width: 100%;border: -1px solid #000000;padding-left: 5%;font-size: 1.4em;background: #ededed;font-weight: bold;}
+.date_list{font-size: 1.1em;font-weight: bold;width: 20%;display: block;float: left;text-align: center;padding: 3% 0 3% 0;}
+.list_date{width: 90%;margin-left:5%;margin-bottom: 5%;}
+.list{border: 1px solid #ccc;width: 90%;margin-left: 5%;padding: 4% 4% 1% 4%;font-weight: 500;margin-top: 3%;}
+.sub_list{padding: 2% 0 2% 0;border-bottom: 1px solid #ccc;}
+.sub_list_bottom{border: 0;text-align: right;}
+.money_span{font-size: 1.4em;color: orange;font-weight:-bold;}
+.show_list{display: none;}
+.show_active{display: block;}
+.date_active{color: #00ffff;border-bottom: 1px solid #00FFFF;}
+.mh_date{width: 100%;;}
+.mh_date2{width: 100%;}
+/*.calender{width: 100%;}*/
+#year{font-size: 1em;}
+.font_span{width: 13%;display: block;float: left;text-align: -center;padding-left: 6%;margin-bottom: ;}
+.search_btn{padding: 2% 20% 2% 20%;text-align: center;border: 1px solid #ccc;width: 88%;margin-left:6% ;margin-top: %;border-radius: 20px;color: #00FFFF;}
+.rili_div{margin-bottom: 3%;}
