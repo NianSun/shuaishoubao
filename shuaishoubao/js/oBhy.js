@@ -12,14 +12,33 @@ $(function(){
 		$(".wenti_alert1").hide(300);
 	});
 	//输入框输入事件
-//	
-//	$(".input_css").bind('input propertychange',function(){
-//		var length=$(".input_css").val().length;
-//		if(length>4){
-//			$(".input_css").val($(".input_css").val().substr(0,5));
-//		}
-// 	  	document.title=$(".input_css").val().length;
-//	});
+	
+	$(".input_css").bind('input propertychange',function(){
+		$(".sub_menu").show();
+		var input_val=$(".input_css").val();
+		var input_length=$(".input_css").val().length;
+		if(input_length==0){
+			$(".sub_menu").show();
+		}else{
+			$(".sub_top").each(function(){
+				var this_text=$(this).text();
+				
+				if(this_text.indexOf(input_val) > 0){
+					$(this).parent().parent().show();
+				}else{				
+					$(this).parent().parent().hide();
+				}
+			});
+		}
+		
+	});
+	
+	$(".clear_span").click(function(){
+		$(".sub_menu").show();
+		var input_val=$(".input_css").val('');
+	});
+	
+	
 	//点击添加按钮
 	$(".add_btn").click(function(){
 		$(".add_alert").show(0);

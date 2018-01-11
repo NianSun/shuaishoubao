@@ -23,6 +23,35 @@ $(function(){
 		$('.add_friend_css').hide();
 		$("body").css('overflow','scroll');
 	});
+	
+	
+		//输入框输入事件
+	
+	$(".search_input").bind('input propertychange',function(){
+		$(".sub_menu").show();
+		var input_val=$(".search_input").val();
+		var input_length=$(".search_input").val().length;
+//		alert(input_val);
+		if(input_length==0){
+			$(".sub_menu").show();
+		}else{
+			$(".search_text").each(function(){
+				var this_text=$(this).text();
+				
+				if(this_text.indexOf(input_val) > 0){
+					$(this).parent().parent().show();
+				}else{				
+					$(this).parent().parent().hide();
+				}
+			});
+		}
+		
+	});
+	//店家合作伙伴查看详情
+	$(".sub_menu").click(function(){
+		window.location.href="oHzhbxq.html";
+	});
+	
 });
 
 function adaptation(){
@@ -38,7 +67,6 @@ function adaptation(){
 	$('.search_filter').css({'font-size':v_Height*0.02});
 	$('.add_friend').css({});
 	$('.add_btn').css({'border-radius':v_Height*0.03,'font-size':v_Height*0.02});
-	$('.friend_choice').css({'border-radius':v_Height*0.02});
 	$('.friend_p').css({'height':v_Height*0.06,'line-height':v_Height*0.06+'px','font-size':v_Height*0.02,'margin':0});
 	$('.add_friend_table').css({'border-radius':v_Height*0.02,'height':v_Height*0.6});
 	$('.add_friend_title').css({'font-size':v_Height*0.04,'padding-top':v_Height*0.05,'margin-bottom':v_Height*0.04});
