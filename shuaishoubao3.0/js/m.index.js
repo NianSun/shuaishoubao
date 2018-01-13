@@ -10,7 +10,7 @@ $(document).ready(function () {
 	var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
     loop: true,
-    autoplay : 3000,//自动播放
+    autoplay : 4000,//自动播放
     
     
     // 如果需要分页器
@@ -29,7 +29,7 @@ $(document).ready(function () {
   		if(flag=='0'){ 			
   			$(this).prop({'src':'img/after_btn.png'});
   			flag=1;
-  			$(".sub_nav").animate({'height':v_Height*0.5});
+  			$(".sub_nav").animate({'height':v_Height*0.6});
   		}else{
   			$(this).prop({'src':'img/before_btn.png'});
   			$(".sub_nav").animate({'height':0});

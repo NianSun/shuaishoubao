@@ -93,9 +93,8 @@ function adaptation(){
 	$('#all_select').css({'margin-top':v_Height*0.003});
 	$('.main_div_big').css({'margin-bottom':v_Height*0.07});
 	$('.div_table').css({'font-size':v_Height*0.04,'border-radius':v_Height*0.03});
-	$('.table_title').css({'margin-top':v_Height*0.05,'margin-bottom':v_Height*0.02});
-	$('.input_name').css({'font-size':v_Height*0.024,'height':v_Height*0.06,'padding':v_Height*0.01,'border-radius':v_Height*0.06,'line-height':v_Height*0.04+'px','margin-bottom':v_Height*0.02});
-	$('.input_price').css({'font-size':v_Height*0.024,'height':v_Height*0.06,'padding':v_Height*0.01,'border-radius':v_Height*0.06,'line-height':v_Height*0.04+'px'});
+	$('.input_name').css({'height':v_Height*0.06,'padding':v_Height*0.01,'border-radius':v_Height*0.06,'line-height':v_Height*0.04+'px','margin-bottom':v_Height*0.02});
+	$('.input_price').css({'height':v_Height*0.06,'padding':v_Height*0.01,'border-radius':v_Height*0.06,'line-height':v_Height*0.04+'px'});
 	$('.table_name').css({'font-size':v_Height*0.02,'margin':v_Height*0.01});
 	$('.table_btn').css({'margin-top':v_Height*0.02});
 	$('.span_delete').css({'font-size':v_Height*0.026});

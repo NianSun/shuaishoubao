@@ -95,7 +95,7 @@ $(function(){
 	});
 	
 	$(window).resize(function(){
-		adaptation();
+//		adaptation();
 	})
 	
 });
@@ -113,7 +113,6 @@ function adaptation(){
 	$('.wode_menu').css({'height':v_Height*0.18,'width':'90%','margin-top':v_Height*0.01,'margin-bottom':v_Height*0.01,});
 	$('.sub_wode_menu').css({'font-size':v_Height*0.02,'line-height':v_Height*0.06+'px','height':v_Height*0.06});
 	$('.sign_out').css({'border-radius':v_Height*0.15})
-	$('.renzheng_css').css({'border-radius':v_Height*0.02});
 	$('.sub_menu').css({'width':v_Width*0.333333,'height':v_Width*0.333333});
 	$('.sub_menu img').css({'height':v_Width*0.3333,'width':v_Width*0.26});
 	$('.sub_theme').css({'line-height':v_Height*0.05+'px'});

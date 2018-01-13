@@ -10,7 +10,7 @@ $(document).ready(function () {
 	var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
     loop: true,
-    autoplay : 2000,//自动播放
+    autoplay : 4000,//自动播放
     
     
     // 如果需要分页器

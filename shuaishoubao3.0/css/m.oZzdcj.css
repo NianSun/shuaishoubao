@@ -19,8 +19,8 @@ body{text-align: center;}
 /*background-image: url(../img/border-image.png);*/
 .goods_small_model{border: -1px solid #AAA;display: block;z-index: 20;height: 50%;background-image: url(../img/border-image.png);color: #fff;}
 .big_div{border: -1px solid red;}
-.sub_nav_small{width: 100%;height:15%;border: -1px solid red;color: #000;background-color: -#313131;}
-.sub_nav_small_bottom{width: 100%;height:10.1%;border: -1px solid red;background-color: #122B40;color: #fff;}
+.sub_nav_small{width: 100%;height:13%;border: -1px solid red;color: #000;background-color: -#313131;}
+.sub_nav_small_bottom{width: 100%;height:9.1%;border: -1px solid red;background-color: #122B40;color: #fff;}
 .bottom_css{width: 100%;height:5%;background-color: #fff;position: fixed;bottom: 0;opacity: 0.8;border-radius: -20px;color:#000;}
 .bottom_div{width: 33.3333%;border: -1px solid #aaa;height: 100%;float: left;background-color: -#333000;}
 .Cog{display: none;}

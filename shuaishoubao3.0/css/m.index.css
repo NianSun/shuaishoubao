@@ -18,8 +18,8 @@ body{text-align: center;}
 /*background-image: url(../img/border-image.png);*/
 .goods_small_model{border: -1px solid #AAA;display: block;z-index: 20;height: 50%;background-image: url(../img/border-image.png);color: #fff;}
 .big_div{border: -1px solid red;}
-.sub_nav_small{width: 100%;height:15%;border: -1px solid red;color: #000;}
-.sub_nav_small_bottom{width: 100%;height:10%;border: -1px solid red;background-color: #000;color: #fff;}
+.sub_nav_small{width: 100%;height:13%;border: -1px solid red;color: #000;}
+.sub_nav_small_bottom{width: 100%;height:9%;border: -1px solid red;background-color: #000;color: #fff;}
 .swiper-button-next{opacity: 0;}
 .swiper-button-prev{opacity: 0;}
 .logo_model2{width: 80%;margin-top: 10%;}

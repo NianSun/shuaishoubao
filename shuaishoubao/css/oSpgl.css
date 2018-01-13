@@ -8,23 +8,23 @@
 .menu_edit{border: 1px solid ;}
 .menu_div_p{margin:0;padding: 0;}
 .menu_add{float: right;}
-.menu_bottom{border: -1px solid red;position: fixed;bottom:0;background-color: #eee;display: flex;align-items: center;justify-content: space-around;text-align: center;border-top: 1px solid -#aaa;z-index: 190;}
+.menu_bottom{border: -1px solid red;position: fixed;bottom:0;background-color: #eee;display: flex;align-items: center;justify-content: space-around;text-align: center;border-top: 1px solid -#aaa;z-index: 19;}
 .menu_delete{margin-left: ;border: -1px solid #AAA;}
 .input_select_small{display: none;float: right;}
 .model_css{background-color: #000;opacity: 0.5;position: fixed;width: 100%;height: 100%;z-index: 20;}
 .div_table{background-color: #fff;position: fixed;text-align: center;width: 90%;left: 5%;top:10%;padding-bottom: 5%;z-index: 30;}
 .menu_bottom span{width: 25%;border-left: -1px solid #aaa;}
-.input_name{width: 90%;margin: auto;border: 1px solid #AAA;}
+.input_name{width: 70%;margin: auto;border: 1px solid #AAA;font-size: 0.5em;}
 #input_name{width: 60%;margin: 0;border: 0;padding: 0;height:90%;}
-.input_price{width: 90%;margin: auto;border: 1px solid #AAA;}
+.input_price{width: 70%;margin: auto;border: 1px solid #AAA;font-size: 0.5em;}
 #input_price{width: 60%;margin: 0;border: 0;padding: 0;height: 90%;}
 .table_img{width: 30%;margin: auto;}
 .table_img img{width: 100%;}
-.table_title{border-bottom: 1px solid #AAA;width: 80%;margin: auto;}
+.table_title{border-bottom: 1px solid #AAA;width: 80%;margin:5% 10% 2% 10%}
 .span_delete{width: 40%;float: left;border-radius: 90px;}
 .span_save{width: 40%;float: right;border-radius: 90px;}
-.table_btn{width: 100%;margin: auto;display: flex;justify-content: space-around;}
+.table_btn{width: 70%;margin: auto;display: flex;justify-content: space-between;}
 .model_big{display: none;z-index: 200;}
 .model_big_add{display: none;}
-.span_add{width: 90%;background-color: #F05F70;border-radius: 90px;}
+.span_add{width: 100%;background-color: #F05F70;border-radius: 90px;color: #fff;}
 
