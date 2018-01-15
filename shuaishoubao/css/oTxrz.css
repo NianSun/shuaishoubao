@@ -1,0 +1,15 @@
+.title_css{font-size: 1.3em;color: #aaa;margin: 2% 0% 10% 4%;}
+.input_div div{border-bottom: 1px solid #aaa;width: 90%;margin-left: 5%;text-align: -center;margin: 5% 0 5% 5%;font-size: 1.2em;}
+.input_css{background:transparent;border: 0;padding: 0;margin: 0;border-bottom:-1px solid #aaa ;width: 70%;padding: 2% ;}
+.title_CSS{font-size: 1.4em;margin: 2% 0% 2% 4%;}
+.shangchuan_big{display: flex;width: 90%;margin-left: 5%;}
+.shangchuan{width: 50%;text-align: center;margin: 2% 0 2% 0;}
+.shangchuan_img {width: 100%;margin: 10% 0 0% 0;}
+.shangchuan_img img{width: 40%;}
+.zhongdian{color: #F05F70;}
+.shangchuan_img div{width: 100%;overflow: auto;}
+.shuoming{width: 90%;margin-left: 5%;color: #F05F70;margin-bottom: 10%;}
+.file_css{position: relative;;z-index: 20;width: 50%;height: 100%;margin-left: 25%;opacity: 0;}
+#shili{width: 70%;border-radius: 10px;}
+.tijiao{position: ;text-align: center;bottom: 10px;width: 90%;margin-left:5% ;margin-bottom: 5%;}
+.tijiao span{width: 100%;background-color: #F3C21D;color: #fff;padding: 3% 0 3% 0;display: block;border-radius: 100px;cursor: pointer;}
