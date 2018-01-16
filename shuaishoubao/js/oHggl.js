@@ -119,7 +119,7 @@ function adaptation(){
 	$('.ycch').css({'font-size':v_Height*0.014});
 	$(".id_class").css({'top':-0.5*$(".id_class").height(),'left':-0.5*$(".id_class").height(),'width':$(".id_class").height(),'border-radius':-$(".id_class").height()+'px','height':$(".id_class").height(),'line-height':$(".id_class").height()+'px'});
 	$('.menu_css img').css({'top':-$(".id_class").height()});
-	$(".Bhy_css").css({'height':v_Width*0.1})
+	$(".Bhy_css").css({'height':v_Width*0.12})
 	//设置图片大小一样
 	var img_height=$(".menu_css img").eq(0).height();
 	var img_width=$(".menu_css img").eq(0).width();

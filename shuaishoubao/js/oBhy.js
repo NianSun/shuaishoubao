@@ -69,5 +69,6 @@ function adaptation(){
 	
 	$("body").css({'font-size':v_Width*0.04});
 	var vw=$('.wenti').width();
-	$('.wenti').css({'height':vw,'border-radius':vw,'width':vw,'line-height':vw+'px'})
+	$('.wenti').css({'height':vw,'border-radius':vw,'width':vw,'line-height':vw+'px'});
+	$(".search_css").css({'height':vw,'line-height':vw+'px'})
 };

@@ -1,17 +1,17 @@
-.search_div{border: -1px solid red;border-bottom: 1px solid #aaa;padding-bottom: 2%;}
-.search_css{border: -1px solid #aaa;width: 84%;float:left;margin: 2% 0 2% 4%;display: flex;align-items: center;padding: 2% 1% 2% 1%;border-radius: 50px;background-color: #eee;}
-.search_css span{width: 16%;text-align: center;color: #aaa;height: 100%;}
-.input_css{width: 70%;border: 0;box-shadow: none;background:transparent;height: 200%;margin: 0;padding: 0;}
+.search_div{border: -1px solid red;border-bottom: 1px solid #aaa;padding-bottom: 2%;position: fixed;width: 100%;top: 0;}
+.search_css{border: -1px solid #aaa;width: 84%;float:left;margin: 2% 0 2% 4%;display: flex;align-items: center;padding: ;border-radius: 50px;background-color: #F05F70;height: 10%;}
+.search_css span{width: 16%;text-align: center;color: #fff;}
+.input_css{width: 70%;border: 0;box-shadow: none;background:transparent;height: 100%;margin: 0;padding: 0;outline: none;color: #fff;}
 .wenti{float: right;width: 8%;margin: 2% 0 2% 0%;padding: ;background-color: #F3C21D;text-align: center;border-radius: 200px;color: #fff;font-weight: bold;font-size: 1.2em;margin-right: 2%;}
 .clear_both{clear: both;}
-.menu{border: -1px solid blue;margin-bottom: 30%;}
+.menu{border: -1px solid blue;margin-bottom: 30%;margin-top: 15%;}
 .sub_menu{border-bottom: 1px solid #aaa;padding: 4% 10% 4% 10%;margin-top: 4%;}
 .sub_left{width: 50%;float: left;}
 .sub_right{width: 50%;float: left;height: 100%;display: flex;align-items: center;justify-content: flex-end;}
 .sub_top{background-color: -#ccc;}
 .sub_bottom{color: #aaa;}
 .add_div{position: fixed;border: -1px solid red;bottom: 3%;text-align: center;width: 100%;}
-.add_btn{width: -80%;border: 1px solid #F05F70;background-color: #F05F70;color: #fff;padding: 2% 30% 2% 30% ;border-radius: 200px;}
+.add_btn{width: 90%;border: 1px solid #F05F70;background-color: #F05F70;color: #fff;padding: 2% 35% 2% 35% ;border-radius: 200px;}
 .wenti_alert{position: fixed;width: 100%;height: 100%;border: -1px solid red;z-index: 2;display: none;}
 .model_alert{position: fixed;top: 0px;background-color: #000;opacity: 0.5;width: 100%;height: 100%;}
 .context_alert{width: 80%;margin-left: 10%;background-color: #fff;position: fixed;border-radius: 20px;margin-top: 20%;padding: 5% 10% 5% 10%;font-size: 1.2em;}
@@ -20,8 +20,9 @@
 .add_name{border-bottom: 1px solid #aaa;font-size: 1.5em;}
 .font_css{;padding: 10% 0 10% 0;}
 .input_css_alert{border:1px solid #aaa;border-radius: 50px;margin-top:10% ;font-size: 0.8em;padding: 3% 0 3% 0;}
-.input_css_alert input{border:0;width: 80%;}
+.input_css_alert input{border:0;width: 75%;outline: none;}
 .btn_group_add{display: flex;align-items: center;justify-content: space-between;margin-top: 10%;}
 .add_btn_model{border:-1px solid red;padding: 2% 12% 2% 12%;border-radius: 90px;color: #fff;font-size: 0.9em;}
 .close_add{background-color: #F3C21D;}
 .sure_add{background-color: #FF0036;}
+.sub_top{color: #F05F70;}

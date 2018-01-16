@@ -18,7 +18,7 @@
 .add_name{border-bottom: 1px solid #aaa;font-size: 1.5em;text-align: center;}
 .font_css{;padding: 10% 0 10% 0;}
 .input_css_alert{border:1px solid #aaa;border-radius: 50px;margin-top:10% ;font-size: 0.8em;padding: 3% 0 3% 0;padding-left: 4%;}
-.input_css_alert input{border:0;width: 80%;}
+.input_css_alert input{border:0;width: 80%;outline: none;}
 .btn_group_add{display: flex;align-items: center;justify-content: space-between;margin-top: 10%;}
 .add_btn_model{border:-1px solid red;padding: 2% 12% 2% 12%;border-radius: 90px;color: #fff;font-size: 0.9em;}
 .close_add{background-color: #F3C21D;}

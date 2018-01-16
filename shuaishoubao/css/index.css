@@ -32,12 +32,12 @@ p{margin:0}
 .sub_wode_menu_last{border-bottom: 0px solid #AAA}
 .sub_title{text-align: left;float: left;padding-left: 20px;}
 .sub_more{text-align: right;float: right;padding-right: 20px;}
-.sign_out{border:1px solid #a4d9df;background-color: #b5e1e4;font-size: 1em;color: #ff0036;width: 60%;}
+.sign_out{border:1px solid #a4d9df;background-color: #b5e1e4;font-size: 1em;color: #F0AD4E;width: 90%;}
 .renzheng_css{position: absolute;right: 0;top: 5%;width: 15%;}
 .renzheng_css img{right: 0;width: 100%;}
 .sub_menu p{margin: 0;}
 .model_css{background-color: #000;opacity: 0.8;width: 100%;height:112%;position: fixed;}
 .model_big{position: fixed;top: 0;text-align: center;display: none;}
 .model_table{background-color: #fff;position: fixed;z-index: 20;padding-bottom: 5%;}
-#user_name{border: 1px solid #aaa;padding: 0;border-radius: 10px;}
+#user_name{border: 1px solid #aaa;padding: 0;border-radius: 10px;outline: none;padding-left:4% ;}
 .btn-quxiao{border: 1px solid #AAA;}

@@ -1,8 +1,8 @@
 .top_div{border: -1px solid red;text-align: center;padding: 6% 0 6% 0;}
 .top_div>div{padding: 2% 0 2% 0;}
-.top_top{border-bottom: 1px solid #aaa;width: 50%;margin-left: 25%;font-weight: bold;font-size: 1.2em;}
+.top_top{border-bottom: 1px solid #aaa;width: 50%;margin-left: 25%;font-weight: bold;font-size: 1.4em;color: #F05F70;}
 .top_bottom{}
-.top_right{position: absolute;top: 5%;width: 15%;right: 10%;}
+.top_right{position: absolute;top: 5%;width: 15%;right: 10%;font-size: 1.4em;}
 .title_div{padding: 2% 0 2% 10%;background-color: #eee;}
 .content_div{display: flex;flex-wrap: wrap;}
 .sub_content{text-align: center;width: 33.333333%;margin-top: 4%;}
@@ -16,7 +16,7 @@
 .add_name{border-bottom: 1px solid #aaa;font-size: 1.5em;text-align: center;}
 .font_css{;padding: 10% 0 10% 0;}
 .input_css_alert{border:1px solid #aaa;border-radius: 50px;margin-top:10% ;font-size: 0.8em;padding: 3% 0 3% 0;padding-left: 4%;}
-.input_css_alert input{border:0;width: 80%;}
+.input_css_alert input{border:0;width: 80%;outline: none;}
 .btn_group_add{display: flex;align-items: center;justify-content: space-between;margin-top: 10%;}
 .add_btn_model{border:-1px solid red;padding: 2% 12% 2% 12%;border-radius: 90px;color: #fff;font-size: 0.9em;}
 .close_add{background-color: #F3C21D;}

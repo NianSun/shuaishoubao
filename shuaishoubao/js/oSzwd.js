@@ -30,7 +30,7 @@ function adaptation(){
 	$('.div_model_css').css({'width':v_Width,'height':v_Height,'z-index':20});
 	$('.div_add').css({'width':v_Width*0.8,'height':v_Height*0.5,'z-index':21,'border-radius':v_Height*0.04,'padding-top':v_Height*0.1});
 	$('.div_model').css({'font-size':v_Height*0.03});
-	$('.input_css').css({'border-radius':$('.input_css').height(),'font-size':v_Height*0.02})
+	$('.input_css').css({'font-size':v_Height*0.02})
 	$('._input_css').css({'border-radius':$('.input_css').height()});
 	$('#add_btn_post').css({'font-size':v_Height*0.02,'border-radius':$('#add_btn_post').height()*0.5});
 	$('.close_span').css({'font-size':v_Height*0.05});

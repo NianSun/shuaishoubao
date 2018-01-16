@@ -8,7 +8,7 @@ $(function(){
 	$(".date_list").click(function(){											//点击选择时间段
 //		alert($(this).index());
 		$(".date_list").css({'border-bottom':'0','color':'#000'});	
-		$(this).css({'border-bottom':'1px solid #00ffff','color':'#00ffff'});
+		$(this).css({'border-bottom':'1px solid #F05F70','color':'#F05F70'});
 		var iNow=$(this).index();
 		$(".show_list").hide();
 		$(".show_list").eq(iNow).show();

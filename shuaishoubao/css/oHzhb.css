@@ -1,13 +1,13 @@
 /*body{background-color: #ededed}*/
 .div_main_css{background-color: #fff;width: 100%}
-.search_css{width: 90%;margin: auto;}
-.search_input{background-color: ;border: 0;padding: 0;margin: 0;z-index: ;background: transparent;box-shadow: none;border-right: 1px solid #2b8a9e;border-left: 1px solid #2b8a9e;}
+.search_css{width: 90%;margin: 0% 0% 0% 5%;position: fixed;top: 0;}
+.search_input{border: none;margin: 0;height: 100%;outline: none;background: transparent;}
 .bg_img{position: absolute;width: 100%;}
 .add_friend{position: fixed;width: 100%;text-align: center;bottom: 10px;}
-.input-group{overflow: hidden;border: 0;border: 1px solid #2b8a9e;;}
-.search_span{border: 0;color: #2b8a9e;}
-.search_filter{border: 0;color: #2b8a9e;}
-.add_btn{background-color: #bde3eb;color: #2b8a9e;height: 90%;width: 60%;border:1px solid #bde3eb;background: -transparent;}
+.input-group{overflow: hidden;border: 0;border: -1px solid #aaa;background-color: #bde3eb;}
+.search_span{border: 0;color: #aaa;background-color: #bde3eb;}
+.search_filter{border: 0;color: #aaa;background-color: #bde3eb;}
+.add_btn{background-color: #bde3eb;color: #2b8a9e;height: %;width: 90%;border:1px solid #bde3eb;}
 .model_css{position: fixed;width: 100%;height: 100%;background-color: #000000;top: 0;z-index: 3;opacity: 0.5;}
 .friend_choice{z-index: 4;background-color: #FFFFFF;width:100%;position: fixed;width: 60%;margin-left: 20%;margin-top:40% ;}
 .friend_choice p{color: #000000;border: -1px solid red;}
@@ -16,13 +16,13 @@
 .add_friend_table{position: fixed;z-index: 20;background-color: #fff;width: 90%;top: 10%;margin-left: 5%;}
 .line_span{width: 80%;border: 0px solid #AAA;height: 0;display: block;margin: auto;height: 1px;background-color: #aaa;}
 .add_friend_css{text-align: center;display: none;}
-.friend_input{padding: 0;border: 0;margin: 0;height: 90%;}
+.friend_input{padding: 0;border: 0;margin: 0;height: 90%;outline: none;}
 .add_div_input{border: 1px solid #AAA;width: 80%;margin: auto;}
-.add_friend_btn{background-color: #F05F70;;color: #fff;width: 60%;}
+.add_friend_btn{background-color: #F05F70;;color: #fff;width: 80%;}
 
 
 .clear_both{clear: both;}
-.menu{border: -1px solid blue;margin-bottom: 30%;}
+.menu{border: -1px solid blue;margin-bottom: 30%;margin-top: 15%;}
 .sub_menu{border-bottom: 1px solid #aaa;padding: 4% 10% 4% 10%;margin-top: 4%;}
 .sub_left{width: 50%;float: left;}
 .sub_right{text-align: left;}

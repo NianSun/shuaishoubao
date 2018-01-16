@@ -10,6 +10,10 @@ $(function(){
 	})
 	
 });
+window.onload=function(){
+	var height_img=$(".shangchuan_img img").height()/2+$(".file_css").height()/2;
+	$(".file_css").css({'top':-height_img})
+}
 
 function adaptation(){
 	// // 获取设备大小自适应
@@ -17,6 +21,5 @@ function adaptation(){
 	var v_Width=$(window).width();
 	
 	$("body").css({'font-size':v_Width*0.03});
-	var height_img=$(".shangchuan_img img").height()/2+$(".file_css").height()/2;
-	$(".file_css").css({'top':-height_img})
+	
 }

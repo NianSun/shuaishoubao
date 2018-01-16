@@ -15,11 +15,11 @@
 .money_span{font-size: 1.4em;color: orange;font-weight:-bold;}
 .show_list{display: none;}
 .show_active{display: block;}
-.date_active{color: #00ffff;border-bottom: 1px solid #00FFFF;}
+.date_active{color: #F05F70;border-bottom: 1px solid #F05F70;}
 .mh_date{width: 100%;;}
 .mh_date2{width: 100%;}
 /*.calender{width: 100%;}*/
 #year{font-size: 1em;}
 .font_span{width: 13%;display: block;float: left;text-align: -center;padding-left: 6%;margin-bottom: ;}
-.search_btn{padding: 2% 20% 2% 20%;text-align: center;border: 1px solid #ccc;width: 88%;margin-left:6% ;margin-top: %;border-radius: 20px;color: #00FFFF;}
+.search_btn{padding: 2% 20% 2% 20%;text-align: center;border: 1px solid #ccc;width: 88%;margin-left:6% ;margin-top: %;border-radius: 20px;color: #F05F70;}
 .rili_div{margin-bottom: 3%;}
