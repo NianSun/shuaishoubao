@@ -11,7 +11,7 @@
 .div_pwd{width: 80%;margin:20px auto;background-color: #dbeff3;height: 40px;border-radius: 10px;line-height: 40px;border:1px solid #bde3eb;}
 .forget_pwd{text-align: right;padding-right: 10%;cursor: pointer;color: yellow;}
 .forget_pwd p{text-decoration: underline;}
-.btn_login{width: 80%;}
+.btn_login{width: 80%;outline: none;}
 .div_btn{text-align: center;font-weight: 800;color: red;font-family: 方正正粗黑简体;}
 .register{text-align: center;cursor: pointer;color: #FFF;margin-top: 10px;position: fixed;width: 100%;}
 .register_1{color: yellow;text-decoration:underline}
