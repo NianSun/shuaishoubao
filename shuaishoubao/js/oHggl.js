@@ -71,7 +71,7 @@ $(function(){
 //		$('.one_btn').hide();
 		$('input[name=edit]:checked').attr("checked",false);						//改变checkbox的状态false
 		flag=1;
-		$('.btn_edit').text("选择一键上货");
+		$('#btn_edit').text("选择一键上货");
 		
 	
 		$('.one_btn').show();
@@ -114,7 +114,7 @@ function adaptation(){
 	$('.span_group').css({'border-radius':v_Height*0.01,'font-size':v_Height*0.02,'line-height':v_Height*0.04+'px','width':v_Width*0.2,'height':v_Height*0.04});
 	$('.span_number').css({'height':v_Height*0.04});
 	$('.menu_css input').css({'width':v_Height*0.03,'height':v_Height*0.03,'border-radius':v_Height*0.03});
-	$('.btn_bottom').css({'height':v_Height*0.06,'width':v_Width});
+	$('.btn_bottom').css({'height':v_Width*0.12,'width':v_Width});
 	$('.btn_bottom button').css({'font-size':v_Width*0.03});
 	$('.ycch').css({'font-size':v_Height*0.014});
 	$(".id_class").css({'top':-0.5*$(".id_class").height(),'left':-0.5*$(".id_class").height(),'width':$(".id_class").height(),'border-radius':-$(".id_class").height()+'px','height':$(".id_class").height(),'line-height':$(".id_class").height()+'px'});

@@ -42,7 +42,7 @@ $(function(){
 		window.location.href="oSbgl.html";
 	});
 	$('#oCpmb').click(function(){						//产品模板
-		window.location.href="oCpmb.html";
+		window.location.href="oMbgl.html";
 	});
 	$('#oDdgl').click(function(){						//订单管理
 		window.location.href="oDdgl.html";

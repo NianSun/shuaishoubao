@@ -1,0 +1,16 @@
+.top{ border: -1px solid red;padding:5% 0% 5% 0%;background: url('../images/bg_02.png') no-repeat center center;background-size: 100% 100%;}
+.div_img{border: -1px solid blue;background: url('../images/bian1.png') no-repeat center center;background-size: 50% 100%;}
+.div_img img{width: 30%;margin-left: 40%;margin: 10% 0% 10% 35%}
+.menu{border: -1px solid red;}
+.sub_menu{display: flex;justify-content: space-between;padding: 6%;border-bottom: 1px solid #aaa;width: 90%;margin-left: 5%;}
+.sub_beizhu{display: flex;justify-content: space-between;padding: 6%;border-bottom: -1px solid #aaa;width: 90%;margin-left: 5%;}
+.sub_input{padding-top: 0%;border: 0;}
+.input_css{border: 0;outline: none;}
+.sub_left{font-weight: bold;display: flex;justify-content: flex-start;border: -1px solid red;font-size: 1.0em;}
+.sub_right{border: -1px solid red;font-size: 0.8em;flex-grow: 1;}
+.context_input{flex-grow: 1;height: calc(2*100%);border: 1px solid #aaa;outline: none;font-size: 1em;}
+.bottom{border: 0;}
+.bottom span{border: -1px solid red;font-weight: bold;padding: 3% 15% 3% 15%;color: #fff;border-radius: 100px;}
+.span_delete{background-color: #F05F70;}
+.span_save{background-color: #00FFFF;}
+.btn{font-size: 1em;}
