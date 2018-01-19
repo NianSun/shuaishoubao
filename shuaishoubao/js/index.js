@@ -41,7 +41,7 @@ $(function(){
 	$('#oSbgl').click(function(){						//设备管理
 		window.location.href="oSbgl.html";
 	});
-	$('#oCpmb').click(function(){						//产品模板
+	$('#oCpmb').click(function(){						//模板管理
 		window.location.href="oMbgl.html";
 	});
 	$('#oDdgl').click(function(){						//订单管理
