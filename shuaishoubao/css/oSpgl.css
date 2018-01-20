@@ -27,4 +27,5 @@
 .model_big{display: none;z-index: 200;}
 .model_big_add{display: none;}
 .span_add{width: 100%;background-color: #F05F70;border-radius: 90px;color: #fff;}
+input{outline: none;}
 
