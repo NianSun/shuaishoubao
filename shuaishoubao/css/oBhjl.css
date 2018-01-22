@@ -1,0 +1,8 @@
+.thead_tr th{width: %;text-align: center;}
+.table_tbody{text-align: center;}
+.top_div{width: 100%;background: url(../images/bg_02.png);color: #fff;padding: 5%;font-size: 1.2em;}
+.thead_date{width: 35%}
+.thead_number{width: 12%}
+.thead_name{width: 20%}
+.thead_count{width: 16%}
+.thead_user{width: 17%}

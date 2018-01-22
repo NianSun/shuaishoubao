@@ -100,6 +100,10 @@ $(function(){
 	$(".genghuan").click(function(){
 		window.location.href="oBhy.html?传递参数=改变按钮状态-改变状态按钮-";
 	});
+	//点击补货记录
+	$("#bhjl").click(function(){
+		window.location.href="oBhjl.html";
+	});
 	
 	
 	

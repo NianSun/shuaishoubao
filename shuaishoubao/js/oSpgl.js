@@ -61,6 +61,11 @@ $(function(){
 		$('body').css('overflow','scroll');
 		
 	});
+	
+	$(".close_span").click(function(){
+		$('.model_big').hide();
+		$('.model_big_add').hide();	
+	});
 //	var input_bottom=$('.div_table').css('bottom');
 //	$("#input_name").focus(function(){
 //		$('.div_table').css({'bottom':0});
