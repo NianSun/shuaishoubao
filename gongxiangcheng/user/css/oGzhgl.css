@@ -1,0 +1,10 @@
+.list_div{border: -1px solid red;text-align: center;padding-right: 40px;}
+.table_tr>th{text-align: center;background-color: rgb(247, 236, 181);}
+#tbody_css td{height: 40px;line-height: 40px;padding: 0;margin: 0;}
+.table span{color: #fff;padding: ;border-radius: 5px;cursor: pointer;display: block;width:80px;display: block;height: 30px;line-height: 30px;margin-top: 5px;}
+.table span:hover{color: #000;}
+.open_span{background-color: #46B8DA;}
+.chakan_span{background-color: #FF0036;}
+.delete_span{background-color: #D43F3A;}
+.add_span{background-color: #F0AD4E;}
+input{width:80%;height: 30px;}

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>设备管理</title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/oSbgl.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/oSbgl.css"/>
+		<script type="text/javascript" src="js/echarts.simple.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<!--弹出层-->
+		<div class="model"></div>
+		<!--添加框-->
+		<!--<div class="add_div">
+			<div class="add_title">
+				<span class="glyphicon glyphicon-plus"></span>添加新设备
+			</div>
+			<div class="input_div">
+				<span class=""><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;设备编号：</span><input type="number" class="input_css" />
+			</div>
+			<div  class="input_div">
+				<span> <span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;放置地址：</span><input type="text" class="input_css" />
+			</div>
+			<div class="btn_div">
+				<span class="quxiao_btn"> <span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;取消</span>
+				<span class="save_btn"> <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;保存</span>
+			</div>
+		</div>-->
+	<div class="main_div">
+		<div class="menu">
+			<div class="top">
+				<div class="img_div">
+					<img src="img/logo.png" alt="" />
+				</div>
+				<div class="img_div1">
+					<img src="img/head1.png" alt="" />
+				</div>
+				<div class="user_div">1232****113</div>
+				<div class="exit_div">退出登录</div>
+			</div>
+			<div class="nav_div">				
+				<div id="oIndex" class="sub_nav"><span class="glyphicon glyphicon-home"></span>主页</div>
+				<div id="oSbgl" class="sub_nav"  style="background-color:#F7ECB5"><span class="glyphicon glyphicon-th"></span>设备管理</div>
+				<div id="oGzhgl" class="sub_nav"><span class="glyphicon glyphicon-tasks"></span>公众号管理</div>
+				<div id="oJltj" class="sub_nav"><span class="glyphicon glyphicon-stats"></span>记录统计</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="div_title">设备管理</div>
+			<div class="content_top">
+				
+				<div class="sub_content">
+						<div class="sub_top">
+								使用次数
+						</div>
+						<div  class="sub_bottom">
+							<span>200</span>次
+						</div>
+				</div>
+				
+				<div class="sub_content">
+							<div class="sub_top">
+								在线设备
+							</div>
+							<div  class="sub_bottom">
+								<span>200</span>/
+								<span>200</span>
+							</div>
+				</div>
+				
+				<div class="sub_content">
+						<div class="sub_top">
+								今日使用次数
+						</div>
+						<div  class="sub_bottom">
+							<span>200</span>次
+						</div>
+				</div>
+				
+			</div>
+			<div class="list_div">
+				<!--设备列表-->
+				<div class="sub_list">
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333331233</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				<div class="sub_list">
+					<!--<div class="edit_div">
+						<span class="glyphicon glyphicon-cog shezhi_span"></span>
+						<span class="glyphicon glyphicon-trash delete_span"></span>
+						<span class="glyphicon glyphicon-edit edit_span"></span>						
+					</div>-->
+					<div class="list_img_div"> 
+						<img src="img/rtc.png" alt="" />
+					</div>
+					<div class="zhuangtai_div">在线or离线</div>
+					<div class="number_div">编号：
+						<span class="sub_number">2333333333</span>
+					</div>
+					
+					<div class="count_div">
+						使用次数：
+						<span class="sub_number">122</span>
+					</div>
+					<div class="count_div">
+						公众号：
+						<span class="sub_number">甩手宝科技</span>
+					</div>
+					<div class="sub_address">地址：
+							<span>许昌市魏都区八一路与八龙路交叉口</span>
+					</div>					
+				</div>
+				
+					
+				
+			
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
