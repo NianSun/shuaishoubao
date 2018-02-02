@@ -1,26 +1,30 @@
-
-         
-$(document).ready(function () {
+$(function () {
 	
 	var v_Width=$(window).width();
   	var v_Height=$(window).height();
+  	
 	var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
     loop: true,
-    autoplay : 4000,//自动播放
+    loopAdditionalSlides :-1,
+    autoplay : 6000,//自动播放
+//  effect : 'fade',
     
     
     // 如果需要分页器
     pagination: '.swiper-pagination',
+    paginationType : 'bullets',
     
     // 如果需要前进后退按钮
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
+    paginationClickable :true,
     
-    // 如果需要滚动条
+//  // 如果需要滚动条
 //  scrollbar: '.swiper-scrollbar',
-  });
-  	
+//  scrollbarHide : false,
+//	scrollbarDraggable : true ,
+});
 	 
   
 	apadtation();
@@ -36,13 +40,13 @@ $(document).ready(function () {
 	});
 	
 	$("#goods_small img").mouseover(function(){			//鼠标移入小图标
-		$(this).animate({width:'85%'},200);
+		$(this).animate({width:'100%'},200);
 	});
 	$("#goods_small img").mouseleave(function(){			//鼠标移出小图标
-		$(this).animate({width:'60%'},1000);
+		$(this).animate({width:'90%'},1000);
 	});
 	$(".goods_small_model").mouseover(function(){
-		$(this).animate({opacity:0.8},100);
+		$(this).animate({opacity:1},100);
 	});
 	$(".goods_small_model").mouseleave(function(){
 		$(this).animate({opacity:0},1000);
@@ -69,27 +73,6 @@ $(document).ready(function () {
 	$(".content").click(function(){
 						//content的描述区
 	});
-	
-//	$(".content").mouseleave(function(){
-//		$(this).find('div').eq(1).animate({top:'-100%',opacity:0},500);
-//	});
-	
-//	$(".content_img").mouseover(function(){
-//		$(this).animate({width:'100%',height:'100%',top:'0%',left:'0%'},600);
-//	});	
-//	$(".content_img").mouseleave(function(){
-//		$(this).animate({width:'50%',height:'50%',top:'25%',left:'25%'},100);
-//	});
-//	$(".content_span").mouseover(function(){
-//		$(this).animate({'opacity':1});
-//	});
-//	$(".content_span").mouseleave(function(){
-//		$(this).animate({'opacity':0.4});
-//	});
-//	
-//	$(".content_span").click(function(){
-//		$(this).parent().find('div').eq(1).animate({'top':'0',opacity:1},500);
-//	});
 	
 	
 	$(".buy_span").click(function(){
@@ -119,12 +102,12 @@ $(document).ready(function () {
 			$(window).scrollTop(goods_top);
 		}	
 		
-		if(scrolltop>44){
+		if(scrolltop>100){
 			$("#nav").css({'position':'fixed','top':0});
 			$(".msg_to_us").css({'top':44});
 		}else{
-			$("#nav").css({'position':'absolute','top':44});
-			$(".msg_to_us").css({'top':88});
+			$("#nav").css({'position':'absolute','top':100});
+			$(".msg_to_us").css({'top':144});
 		}
 	
 	});
@@ -144,38 +127,19 @@ $(document).ready(function () {
 function apadtation(){
 	var v_Width=$(window).width();
   	var v_Height=$(window).height();
-//	if(v_Height>v_Width){
-//		window.location.href='m.index.html';
-//	}
-$(".nav_css_small_1").css({'color':'#aaa'});	
-  	$('body').css('background-color','#f1f1f1');
+	$(".nav_css_small_1").css({'color':'#aaa'});	
 	$(".tab_big").css({'height':v_Width*0.06});
-	$('.swiper-container').css({'height':v_Width*0.25});
-	$("#goods_small").css({'top':0.3*v_Width+40});
+//	$('.swiper-container').css({'height':v_Width*0.25});
+	$("#goods_small").css({'top':0.3*v_Width+100});
 	$("#goods_small>div").css({'height':$("#goods_small div").width(),'border-radius':$("#goods_small div").width(),'line-height':$("#goods_small div").width()+'px'});
 	$(".goods_small_model").css({'border-radius':('0 0 '+$("#goods_small div").width()+'px'+' '+$("#goods_small div").width()+'px'),'line-height':$(".goods_small_model").width()*0.5+'px','font-size':v_Width*0.01});
 	$(".msg_to_us").css({'height':v_Width*0.2});
 	$(".msg_shouji").css({'height':v_Width*0.0333333,'line-height':v_Width*0.0333333333+'px'});
 	var goods_top=$("#goods_small").css('top');
-	$(".xiangqing").css({'top':(parseInt(goods_top)+$("#goods_small").height())+60,'height':v_Width*1.2});
-	$('.swiper-container').css({'width':'100%'});
-	
-//	$(".content_font").css({'font-size':v_Width*0.01});
-	///数据流定位 转化为绝对定位     position的默认方式是static.
-//	$(".content").css('position','static');			//改变定位
-//	var ctop=new Array();
-//	var cleft=new Array();  
-//	$(".content").each(function(key,value){				//获取高度和left	
-//		ctop[key]=$(this).offset().top;
-//		cleft[key]=$(this).offset().left;
-//	});	
-//	$(".content").css('position','absolute');			//改变定位
-//	$(".content").each(function(key,value){				//重新定位数组
-//		$(this).css({'top':ctop[key]-$(".xiangqing").offset().top,'left':cleft[key]});
-//	});
+	$(".xiangqing").css({'top':(parseInt(goods_top)+$("#goods_small").height())+80,'height':v_Width*1.2});
+//	$('.swiper-container img').css({'width':v_Width});
 	$(".footer").css({'top':$(".xiangqing").offset().top+$(".xiangqing").height()});
 	$("#scroll_top").css({'font-size':v_Width*0.01});
 	$(".content_span").css({'font-size':v_Width*0.008})
 	$(".modle_buy").css({'height':v_Height,'width':v_Width});
-//	$(".buy_good img").css({'height':$(".buy_good img").width()*1.4});
 }

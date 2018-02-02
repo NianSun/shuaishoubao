@@ -1,0 +1,30 @@
+html{height:100%}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:100%;width:100%;right: 0;position: fixed;top: 0;z-index: 1;}  
+.img_div{position: fixed;width: 300px;z-index: 1;left: 44px;top:  20px;background-color: #fff;height: 140px}
+.img_div img{width: 60%;}
+.list_map{width: 300px;position: fixed;z-index: 1;background-color: #FFF;top: 160px;left: 44px;cursor:pointer;font-size: 0.8em;height: 70%;min-height: 60%;overflow:auto;}
+.sub_list{border:1px solid -red;padding:20px;border-bottom: -1px solid #aaa;}
+.sub_list:hover{background-color: -#ccc;color: #444;border-top:-1px solid #aaa;border-bottom:-1px solid #aaa;}
+.list_top{margin-bottom: 10px}
+.shebei_title{font-weight: bold;color: #af1919}
+.shebei_number{color:#D43F3A;}
+.shebei_address{color:#AAA;}
+.shebei_address:hover{color:#444;}
+.title{text-align: center;color: #565622;font-weight: bold;font-size: 1.2em;margin: 0 0 5px 0}
+.input_css{margin-left: px;padding: 10px 20px 10px 20px ;width: 300px;border:0;background-color: #eee;outline: none}
+.x_zuobiao,.y_zuobiao{color: #fff;display: none;}
+.BMap_bubble_title{border-bottom: 1px solid #aaa;}
+.BMap_Marker>div>img{width: 35px;height: 35px}
+.BMap_Marker>div{width: 35px;height: 35px}
+.BMapLabel{border:1px solid #fe5d59;color:#fe5d59;background:#fff;border-radius:10px}
+.btn_list{border:1px solid #ccc;height:24px;line-height: 24px;padding: 0 10px 0 10px ;font-size: 0.7em;cursor: pointer;position: absolute;right: 0}
+.btn_list:hover{color:#AF1919;}
+#sanjiao{margin-left: 4px;}
+.glyphicon-map-marker{color:#AF1919}
+label{max-width: none;}
+.b_css{font-size:2px;color:#aaa;cursor:pointer;}
+.b_css:hover{color:#A94442;}
+.b_title{font-size:18px;color:#000;background-color:#FFFFFF;color:#AF1919}
+.edit_btn{position: absolute;right: 10px;}
+.edit_btn:hover{color:#A94442}

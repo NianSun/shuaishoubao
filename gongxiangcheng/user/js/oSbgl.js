@@ -7,7 +7,8 @@ $(function(){
 			$(".add_div").show();
 		})
 		$(".sub_address span").click(function(){
-			alert('打开地图');
+			var oSbnumber=$(this).parent().parent().find('span').eq(0).text();
+			window.location.href="map.html?oSbnumber="+oSbnumber;
 		})
 		
 	

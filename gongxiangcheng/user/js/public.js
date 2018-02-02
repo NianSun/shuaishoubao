@@ -18,7 +18,8 @@ $(function(){
 		})
 		$(".sub_nav").mouseout(function(){
 			$(this).css({'color':'#000'})
-		})
-	
+		});
+		
+		
 	
 });

@@ -35,13 +35,13 @@ $(document).ready(function () {
 		$(".nav_css_small_1").css({'color':'#aaa'});		
 	});
 	$("#goods_small img").mouseover(function(){			//鼠标移入小图标
-		$(this).animate({width:'85%'},200);
+		$(this).animate({width:'100%'},200);
 	});
 	$("#goods_small img").mouseleave(function(){			//鼠标移出小图标
-		$(this).animate({width:'60%'},1000);
+		$(this).animate({width:'90%'},1000);
 	});
 	$(".goods_small_model").mouseover(function(){
-		$(this).animate({opacity:0.8},100);
+		$(this).animate({opacity:1},100);
 	});
 	$(".goods_small_model").mouseleave(function(){
 		$(this).animate({opacity:0},1000);
@@ -76,12 +76,12 @@ $(document).ready(function () {
 		if(scrolltop>goods_top&&flagscroll==1){
 			$(window).scrollTop(goods_top);
 		}
-		if(scrolltop>44){
+		if(scrolltop>100){
 			$("#nav").css({'position':'fixed','top':0});
 			$(".msg_to_us").css({'top':44});
 		}else{
-			$("#nav").css({'position':'absolute','top':44});
-			$(".msg_to_us").css({'top':88});
+			$("#nav").css({'position':'absolute','top':100});
+			$(".msg_to_us").css({'top':144});
 		}
 	
 //		$("#top").css({'top':scrolltop});
@@ -124,7 +124,6 @@ $(document).ready(function () {
 function apadtation(){
 	var v_Width=$(window).width();
   	var v_Height=$(window).height();
-  	$('body').css('background-color','#f1f1f1');
 	$(".tab_big").css({'height':v_Width*0.06});
 	$('.swiper-container').css({'height':v_Width*0.25});
 	$("#goods_small>div").css({'height':$("#goods_small div").width(),'border-radius':$("#goods_small div").width(),'line-height':$("#goods_small div").width()+'px'});
@@ -132,9 +131,8 @@ function apadtation(){
 	$(".msg_to_us").css({'height':v_Width*0.2});
 	$(".msg_shouji").css({'height':v_Width*0.0333333,'line-height':v_Width*0.0333333333+'px'});
 	var goods_top=$("#goods_small").css('top');
-	$(".xiangqing").css({'margin-top':$("#goods_small div").width()+88});
+	$(".xiangqing").css({'margin-top':$("#goods_small div").width()+160});
 	$("#scroll_top").css({'font-size':v_Width*0.01});
 	$(".sider_nav").css({'height':v_Height*0.06,'font-size':v_Width*0.01,'line-height':v_Height*0.06+'px'});
 	$(".modle_buy").css({'height':v_Height,'width':v_Width});
-//	$(".buy_good img").css({'height':$(".buy_good img").width()*1.4});
 }
