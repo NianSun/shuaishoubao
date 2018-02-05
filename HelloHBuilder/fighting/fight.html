@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fight</title>
+	<style type="text/css">
+	@keyframes diren{
+		0% {left: 0;top:0;}
+		10% {left:90%;top: 500px}
+		20% {left:10%;top: 200px}
+		30% {left:50%;top: 700px}
+		40% {left:60%;top: 100px}
+		50% {left:80%;top: 500px}
+		60% {left:50%;top: 700px}
+		70% {left:50%;top: 200px}
+		80% {left:80%;top: 500px}
+		90% {left:10%;top: 300px}
+		100%{left:0;top:0}
+	}
+	html{background-color: #000}
+	body{margin: 0;height: 100%}
+	#diren{background-color: -#aaa;width: 150px;height: 100px;position: fixed;animation:diren 5s infinite;z-index: 20}
+	#ziji{background-color: -#aaa;width: 100px;height: 100px;position: fixed;left:calc(50% - 50px);bottom: 40px;z-index: 20}
+	.big_box img{width: 100%;height: 100%;z-index: 20;position: absolute;}
+	.big_box{width: 100%;height:100%;background-color: -#000;z-index: 5}
+	#ziji span{width: 30px;height: 60px;display: block;background-color: -#ff0036;;position: fixed;background: url(zidan.png);background-size: 100% 100%;z-index: 16}
+	#diren>span{width: 30px;height: 60px;display: block;background-color: -#ff0036;;position: fixed;background: url(direnzidan.png);background-size: 100% 100%;z-index: 16}
+	#star{width: 100%;height: 100%;top: 0;background-color：#fff;position: fixed;z-index: 10}
+	#star img{position: fixed;}
+
+	#star_small{width: 100%;height: 100%;top: 0;background-color：#fff;position: fixed;z-index: 6}
+	#star_small span{position: fixed;background-color: #AAA;height: 10px;width: 10px;display: block;}
+
+	#xiaobing{width: 100%;height: 100%;top: 0;background-color：-#fff;position: fixed;z-index: 19}
+	#xiaobing font{position: fixed;background-color: -#fff;height: 40px;width: 60px;display: block;background:url(diren.png);background-size: 100% 100%}
+	#xiaobing font span{position: fixed;background-color: -#fff;height: 20px;width: 20px;background-color: #fff;border-radius: 20px;display: block;background:-url(direnzidan.png);background-size: 100% 100%}
+	.fps_box{position: fixed;top: 0;z-index: 30;color: #fff;right: 0;font-weight: bold;top: 5px}
+	.fps_box>span{border:1px solid;padding:5px 20px 5px 20px;}
+	.auto_span:hover{background-color: #448888}
+	.auto_span{cursor: pointer;}
+
+	</style>
+	<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+
+			var v_width=$(window).width();
+			var v_height=$(window).height();
+		var D_ren_v=1000;               //敌人自动开火速度  反比
+		var zidansudu=3;               //敌人子弹速度  正比
+		var wanjiazidansudu=-30;         //玩家子弹速度  正比
+		var jiance_fps=18;				//判断子弹是否碰撞的刷新频率 反比
+		var move_sudu=30;				//玩家移动速度   反比
+		var star_move=30 				//星球移动速度  反比
+		var timer='';					//控制移动的定时器 
+		var timerDiren='';
+		var timerAll='';
+		var xiaobingshuliang=0; 		//小兵数量
+		$(function(){
+			///背景星球渲染
+			star();
+			///背景小星星渲染
+			star_small();
+			//添加小兵
+			xiaobing();
+			//自适应屏幕
+			xiaobingshuliang=$('font').length;
+			$('.xiaobing_span').text(xiaobingshuliang); //获取敌人数量
+			//fps显示
+			setInterval(function(){
+				if (Math.random()>0.5) {
+					$('.fps_span').text( 60 - parseInt(Math.random()*10));
+				}else{
+					$('.fps_span').text( 60 + parseInt(Math.random()*10));
+				}
+			},200)
+			
+			//求角度          Math.atan2(1,1)*180/Math.PI
+			
+			//点击关闭自动开火
+			$('.auto_span').click(function(){
+				clearInterval(autofire);
+			});
+			$(window).keydown(function (event) {
+			    var keycode = event.which;
+			    switch(keycode){
+
+			    	case 37:
+			    	//move（‘方向’，速度，‘目标’）
+			    			move('left',-40,v_width-100);
+			    			break;
+			    	case 38:
+			    			move('top',-40,v_height-100);
+			    			break;
+			    	case 39:
+			    			move('left',40,v_width-100);
+			    			break;
+			    	case 40:
+			    			move('top',40,v_height-100);
+			    			break;
+			    	case 32:
+			    			// fire();
+			    			break;
+
+			    }
+
+			});
+
+			//敌人自动开火
+			timerDiren=setInterval(function(){
+				fire($('#diren'),zidansudu);
+			},D_ren_v)
+			//小兵开火   每次一个 小兵开火toFixed(2)
+			var auto_random=0;
+				setInterval(function(){
+					auto_random = parseInt(Math.random()*($('#xiaobing font').length-1));				
+							xiaofire($('#xiaobing').find('font').eq(auto_random),zidansudu);
+				},1500)
+			
+			//按空格开火
+			$(window).keyup(function (event) {
+			    var keycode = event.which;
+			    switch(keycode){
+
+			    	case 32:
+			    			fire($('#ziji'),wanjiazidansudu);
+			    			break;
+
+			    }
+
+			});
+			//  玩家自动开火
+			var autofire=setInterval(function(){
+				fire($('#ziji'),wanjiazidansudu);
+			},300);
+			//键盘抬起  关闭移动定时器
+			$(window).keyup(function (event) {
+				clearInterval(timer);
+			});
+			//监视子弹是否击中敌人
+		 timerAll=setInterval(function(){
+		 	//检测  jiance('被击中者','开枪者','子弹','开枪者角色');
+				jiance($("#diren"),$("#ziji"),$("#ziji span"),1);
+
+			},jiance_fps);
+			//监视子弹是否击中小兵
+			var  timerAllx=setInterval(function(){
+
+				$("#xiaobing font").each(function(){
+					jiance($(this),$("#ziji"),$("#ziji span"),3);
+				});
+
+			},jiance_fps);
+			//监视自己是否被击中
+			var  timerziji=setInterval(function(){
+				jiance($("#ziji"),$("#diren"),$("#diren span"),0);   //自己 是否 被击中
+				jiance($("#ziji"),$("#diren"),$("#diren"),4);		//自己 是否撞到BOSS
+
+				//因为小兵太多 所以要each()一下
+				$("#xiaobing font").each(function(){				//小兵是否打到自己
+					jiance($("#ziji"),$(this),$("#xiaobing font span"),0);
+					jiance($("#ziji"),$("#xiaobing"),$("#xiaobing font"),2);
+				});
+				
+			},jiance_fps);
+
+			// $(window).click(function(){
+
+			// });
+		});
+		//键盘控制移动
+		function move(sty,v,tar){
+			clearInterval(timer);
+			var Target=parseInt($('#ziji').css(sty));
+			timer=setInterval(function(){
+				Target=Target+v;
+				if(Target>=tar){
+					$('#ziji').css(sty,tar);
+					clearInterval(timer);
+				}
+				if(Target<0){					
+					$('#ziji').css(sty,0);
+				}
+				if(Target>=0&&Target<=tar){
+					$('#ziji').css(sty,Target);
+				}
+				
+			},move_sudu);
+		}
+		//开火
+		function fire(obj,fangxiang){
+			var oAudio='<audio src="8367.wav" autoplay=""></audio>'; 		//爆炸音效
+			$('#audio_div2').html(oAudio);
+
+
+			var oZidan=document.createElement("span");
+			var oLeft=parseInt(obj.position().left)+obj.width()/2-15;
+			var oTop=parseInt(obj.position().top)+obj.height()/2-30;
+			oZidan.style['left']=oLeft+'px';
+			oZidan.style['top']=oTop+'px';
+			// document.title=parseInt(objleft);
+			var timer1=setInterval(function(){
+				oTop=oTop+fangxiang;
+				oZidan.style['top']=oTop+'px';
+				if(oTop<=-20||oTop>=v_height){
+					oZidan.remove(); //如果出界就删除子弹元素
+				}
+			},18);
+
+			obj.append(oZidan);
+		}
+		//小兵开火
+		function xiaofire(obj,fangxiang){
+			var oZidan=document.createElement("span");
+			var oLeft=parseInt(obj.position().left)+5;
+			var oTop=parseInt(obj.position().top)+5;
+			oZidan.style['left']=oLeft+'px';
+			oZidan.style['top']=oTop+'px';
+			// document.title=parseInt(objleft);
+			//  获取 子弹目标的  位置  子弹跟踪
+			var ziji_top=$('#ziji').position().top;
+			var ziji_left=$('#ziji').position().left;
+
+			$(oZidan).animate({'top':ziji_top+50+'px','left':ziji_left+50+'px'},1500,function(){
+				oZidan.remove();
+			});
+
+			obj.append(oZidan);
+			// document.title=ziji_left+'2'+ziji_top;
+		}
+
+		//检测是否击中
+		function jiance(obj1,obj2,obj3,target){
+			var B_top=parseInt(obj1.position().top);			//敌人的坐标
+			var B_left=parseInt(obj1.position().left);
+			// document.title=B_left+':'+B_top;
+
+			obj3.each(function(){
+				var S_top=parseInt($(this).position().top);			//敌人的坐标
+				var S_left=parseInt($(this).position().left);
+				if( ( S_top>=B_top && S_top<=(B_top+obj1.height()) ) && ( S_left >= B_left && S_left<(B_left+obj1.width() ) ) )
+				{
+					   //集击中后 子弹消失
+					var oAudio='<audio src="1554.wav" autoplay=""></audio>'; 								//爆炸音效
+					$('#audio_div').html(oAudio);
+					//击中敌人后
+					if(target==1){
+						obj3.remove();
+						// clearInterval(timerDiren);  //敌人停止开火
+						// $('#diren img').prop('src','timg.gif');
+						// document.title="恭喜你赢了";
+						// $('#diren').css({'animation':'rr','top':B_top,'left':B_left});
+						// obj1.animate({'opacity':'0'},2000,function(){
+						// 	clearInterval(timerAll);  //不在检测
+						// 	obj1.remove();
+							$('.defen_span').text(parseInt($('.defen_span').text())+1000);
+						// });		
+
+					}
+					if(target==0){
+						obj3.remove();											//自己被击中
+						$('#ziji img').prop('src','timg.gif');
+						again();
+						var a=1;						
+					}
+					if(target==2){
+						obj3.remove();											//自己被击中
+							$('#ziji img').prop('src','timg.gif');
+							again();
+						// obj1.animate({'opacity':'0'},2000,function(){
+						// 	clearInterval(timerAll);  //不在检测
+						// 	obj1.remove();
+						// 	$('.defen_span').text(parseInt($('.defen_span').text())+1000);
+						// });							
+					}
+					if(target==3){                                         //小兵 被击中
+						obj3.remove(); 
+						obj1.css('backgroundImage','url("timg.gif")');
+						obj1.animate({'opacity':'0'},2000,function(){
+							obj1.remove();
+								xiaobingshuliang=$('font').length;
+								if(xiaobingshuliang<=0){
+									goon();
+								}
+								$('.xiaobing_span').text(xiaobingshuliang);
+								$('.defen_span').text(parseInt($('.defen_span').text())+100);
+						});						
+					}
+					if(target==4){ 
+						// obj3.remove();                                        //被 BOSS 撞到
+						again();
+						obj1.css('backgroundImage','url("timg.gif")');
+											
+					}
+					
+				}
+			}
+			)
+		}
+
+		//星球动画渲染
+		function star(){
+			$('#star img').each(function(){
+				var ran_top=Math.random()*100+'100%';
+				var ran_left=Math.random()*100+'100%';
+				var ran_width=Math.random()*100;
+				$(this).css({'top':ran_top,'left':ran_left,width:ran_width});
+				var iNow=$(this);
+				var v=0;
+				setInterval(function(){
+					var move_v=parseInt(iNow.position().top)+ran_width/20;
+					iNow.css('top',move_v);
+
+					if(move_v>v_height){
+						iNow.css({'top':-100,'left':(Math.random()*100+'100%')});
+					}
+				},star_move);
+				// alert(ran_width);
+			});
+		}
+		//星星渲染
+		function star_small(){
+
+			//星球数量
+
+			for(var i=0;i<=50;i++){
+				var oZidan=document.createElement("span");
+				$('#star_small').append(oZidan);
+			}
+
+
+			$('#star_small span').each(function(){
+				var ran_top=Math.random()*100+'100%';
+				var ran_left=Math.random()*100+'100%';
+				var ran_width=Math.random()*10;
+				$(this).css({'top':ran_top,'left':ran_left,width:ran_width,'border-radius':ran_width,height:ran_width,width:ran_width});
+				var iNow=$(this);
+				var v=0;
+				setInterval(function(){
+					var move_v=parseInt(iNow.position().top)+ran_width/5;
+					iNow.css('top',move_v);
+
+					if(move_v>1000){
+						iNow.css({'top':-100,'left':(Math.random()*100+'100%')});
+					}
+				},star_move);
+				// alert(ran_width);
+			});
+		}
+
+		function xiaobing(){
+		//小兵
+
+					for(var i=0;i<=9;i++){
+						var oFont=document.createElement("font");
+						// var oImg.src="diren.png";
+						$('#xiaobing').append(oFont);
+						// $('#xiaobing span').prop('src','diren.png');
+					}
+
+
+					$('#xiaobing font').each(function(){
+						var ran_top=Math.random()*100+'100%';
+						var ran_left=Math.random()*100+'100%';
+						var ran_width=Math.random()*10;
+						$(this).css({'top':0,'left':ran_left});
+						var iNow=$(this);
+						var v=0;
+							if(Math.random()>0.5){
+								var m_l=-5;
+							}else{
+								var m_l=5;
+							}
+						setInterval(function(){
+							var move_v=parseInt(iNow.position().top)+ran_width+2;
+							var move_l=parseInt(iNow.position().left)+m_l;
+
+							iNow.css({'top':move_v,'left':move_l});
+
+							if(move_v>v_height){
+								iNow.css({'top':-100,'left':(Math.random()*100+'100%')});
+							}
+							if(move_l<0){
+								iNow.css({'left':0});
+							}
+							if(move_l>v_width-100){
+								iNow.css({'left':v_width-100});
+							}
+						},200);
+						// alert(ran_width);
+					});
+
+		}
+//失败  重新开始
+		function again(){
+			if(confirm("闯关失败！是否重开一局?")){
+				clear();
+				$('.defen_span').text(0);
+				$('.xiaobing_span').text(10);
+				$('#ziji').css({'left':'calc(50% - 50px)',bottom: '40px'})
+				$('#ziji img').prop('src','ziji.png');
+				xiaobing();
+			}
+		}
+//下一关
+		function goon(){
+			if(confirm("闯关成功！继续下一关?")){
+				xiaobing();
+				$('.guanqia_span').text(parseInt($('.guanqia_span').text())+1);
+			}
+		}
+//清空小兵
+		function clear(){
+			$('#xiaobing font').each(function(){
+				$(this).remove();
+			});
+
+		}
+
+	</script>
+</head>
+<body>
+	<div class="fps_box">
+
+		<span>自动开火<span class="auto_span">on</span></span>
+		<span>FPS：<span class="fps_span">60</span></span>
+		<span>剩余敌人：<span class="xiaobing_span">0</span></span>
+		<span>分数：<span class="defen_span">0</span></span>
+		<span>用时：<span class="time_span">30</span></span>
+		<span>关卡<span class="guanqia_span">1</span></span>
+	</div>
+	<div class="big_box">
+		<div id="diren"><img src="diren.png" alt=""></div>
+		<div id="ziji"><img src="ziji.png" alt=""></div>
+	</div>
+	<div id="xiaobing"></div>
+		<div id="audio_div3">
+			<audio src="bgm.mp3" autoplay=""></audio>
+		</div>
+		<div id="star">
+			<img src="star1.png" alt="">
+			<img src="star2.png" alt="">
+			<img src="star3.png" alt="">
+			<img src="star4.png" alt="">
+			<img src="star5.png" alt="">
+			<img src="star1.png" alt="">
+			<img src="star2.png" alt="">
+			<img src="star3.png" alt="">
+			<img src="star4.png" alt="">
+			<img src="star5.png" alt="">
+			<img src="star1.png" alt="">
+		</div>
+		<div id="star_small">
+		</div>
+
+		<div id="audio_div">
+		</div>
+		<div id="audio_div2">
+		</div>
+</body>
+</html>

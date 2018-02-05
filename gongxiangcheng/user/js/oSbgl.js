@@ -8,7 +8,7 @@ $(function(){
 		})
 		$(".sub_address span").click(function(){
 			var oSbnumber=$(this).parent().parent().find('span').eq(0).text();
-			window.location.href="map.html?oSbnumber="+oSbnumber;
+			window.open("map.html?oSbnumber="+oSbnumber);
 		})
 		
 	

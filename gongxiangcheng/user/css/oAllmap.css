@@ -1,5 +1,5 @@
 html{height:100%}  
-body{height:100%;margin:0px;padding:0px}  
+body{height:100%;margin:0px;padding:0px;font-size: 14px;}  
 #container{height:100%;width:100%;right: 0;position: fixed;top: 0;z-index: 1;}  
 .img_div{position: fixed;width: 300px;z-index: 1;left: 44px;top:  20px;background-color: #fff;height: 140px}
 .img_div img{width: 60%;}
