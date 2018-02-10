@@ -1,0 +1,27 @@
+/*.main_list{border:1px solid red;width: auto;height: auto;}*/
+.user_more{border:  1px solid #aaa;border-bottom:  0px solid #aaa;min-width:600px ;padding: ;position: -absolute;display: flex;flex-wrap: wrap;height: auto;}
+.user_more>div{display: flex;min-width: 50px;width:33.3333333%;height: px;line-height: 40px;float: -left;text-align: ;justify-content: space-around;border-bottom:1px solid #aaa;color: #A94442;cursor: pointer;}
+.user_more>div:hover{color: #000;}
+.user_more img{width: 18%;}
+.user_more span{border:  -1px solid #0000FF;;padding:4px  ;text-align:-center ;width: 50%;}
+em{margin-right: 10px;}
+#beizhu_context{color: #aaa;padding: 4px;width: 100%;;line-height: 30px;border-bottom:1px solid #aaa}
+.clear{clear: both;}
+.beizhu_context:hover{color: #A94442;}
+.user_center{border-left:1px solid #aaa;border-right: solid 1px #aaa;}
+.pwd_set{border:1px solid -#aaa;background-color: #FAF2CC;border-radius: 50px;font-size: 12px;cursor: pointer;height: 30px;line-height: 30px;text-align: center;padding: ;display: block;margin-top: 5px;}
+.pwd_set:hover{background-color: #FAEBCC;}
+.object_list{border:-1px solid red;width: 100%;margin-left: 0%;}
+.object_list:first-child{border-right: solid #aaa 1px}
+.big_context{;min-width:600px;border: solid 1px #aaa;border-top: solid 0px #aaa; }
+.object_name{font-size: 18px;text-align: center;height: 50px;line-height: 50px;border-bottom: #aaa 1px solid;background-color: #FAEBCC; }
+.sub_list{border-bottom:solid 1px #aaa ;cursor: pointer;height: 30px;line-height: 30px;display: flex;justify-content: space-around;text-align: center;}
+.sub_list:hover{background-color: #FAEBCC;}
+/*.sub_list>span:first-child{border-right: solid 1px #aaa;border-left:solid 1px #aaa ;}*/
+.sub_list:first-child{background-color: #FAF2CC;text-align: center;}
+.sub_list>span{width: 50%;padding-left: 10px;}
+.object_name:first-child{border-left: solid 1px #aaa;}
+.sub_object{border-left: solid #ccc 1px; border-right: solid #ccc 1px; }
+.map_span:hover{color: #46B8DA;text-decoration: underline;}
+.shiyongjilu{color:firebrick;}
+.shiyongjilu:hover{color:aqua;text-decoration:underline}

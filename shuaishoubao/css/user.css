@@ -1,0 +1,41 @@
+/*主页_css*/
+.top{border:1px solid #aaa;text-align: center;;width: 100%;background: url(../images/user_bg.png);background-size: 100% 100%;position: -absolute;}
+.head_img{height: 50%;margin-top: 12%;}
+.content{display: flex;flex-wrap: wrap;justify-content: flex-start;border:-1px solid #aaa;flex-direction: row;padding-left: 2%;margin-bottom: 15%;}
+.sub_content{width: 30%;margin: 3% 2% 0 1%;border-radius: 10px;overflow: -hidden;}
+.content img{width: 100%;border-bottom: ;}
+.content>div{width: 30%;border:1px solid #aaa;text-align: center;}
+.name{font-weight: bold;}
+.prece{border-bottom: 1px solid #aaa;padding: %;font-size: 1.2em;color: #FF0036;}
+.buy_span{cursor: pointer;padding: 5% 30% 5% 30%;background-color: #85cdd1;border-radius: 200px;color: #fff;}
+.number{text-align: left;}
+.number span{background-color: #76b8c8;color: #fff;border-radius: 100px;display: block;width: 15%;text-align: center;margin: 2%;}
+.name{position: relative;}
+.buy_div{position: relative;top: ;z-index: -2;top:-25px}
+.img_div{position: relative;top: ;z-index: -2;top:-50px}
+.name{position: relative;top: ;z-index: -2;top:-50px}
+.prece{position: relative;top: ;z-index: -2;top:-50px}
+
+.bottom{display: flex;text-align: center;padding: 2% 0% 2% 0;color: #666060;border-top: 1px solid #aaa;position: fixed;bottom: 0;width: 100%;background-color: #fff;cursor: pointer;z-index: 2;}
+.bottom div{width: 25%;display: flex;justify-content: center;flex-direction: column;}
+.icon_span{font-size: 2.2em;}
+.font_span{font-size: 1em;margin-top: 2%;}
+/*.number{position: relative;top:20px;border-radius: 100%;}*/
+/*订单_css*/
+.dingdan_list{padding: 0% 6% 15% 6%}
+.content_list{border:-1px solid #aaa;;font-size: 1.1em;padding: 8% 0% 0% 0%}
+.dingdanhao{font-weight: bold;padding-bottom: 10px;border-bottom: 1px solid #aaa;}
+.zhuangtai{float: right;color: #F05F70;}
+.shebeihao{padding: 30px 0 10px 0;color: #aaa;}
+.message{padding: 10px 0 10px 0;color: #aaa;}
+.date{padding: 10px 0 30px 0;color: #aaa;}
+.beizhu{text-align: right;border-top: 1px solid #aaa;padding: 20px 0 20px 0;}
+.renmminbi{color: #F05F70;}
+/*我的_css*/
+.user_content{padding: 0% 0 0 0;}
+.top_wode{border:1px solid #aaa;text-align: center;;width: 100%;background: url(../images/bg_02.png);background-size: 100% 100%;position: -absolute;}
+.top_text{color: #fff;padding: 10px 0 0 0;font-size: 1.1em;}
+.user_head_img{height: 50%;margin-top: 8%;border-radius: 500px;}
+.subcontent{padding: 4% 6% 4% 6%;font-size: 1.2em;cursor: pointer;border-bottom: 1px solid #aaa;}
+.content_left{font-weight: bold;}
+.content_right{float: right;}

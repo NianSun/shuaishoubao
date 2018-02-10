@@ -1,0 +1,21 @@
+body{;border: 0;padding: 2% 0 2% 2%;margin: 0;}
+.main_div{display: flex;height: 100%;}
+.img_div{margin-bottom: 15%;border-bottom: 2px solid #aaa;text-align: left;}
+.img_div img{width: 60%;}
+.img_div1 img{width: 30%;}
+.exit_div{font-size: 0.8em;color: #FF0036}
+.exit_div:hover{color: darkred}
+.menu{border: -1px solid red;width: 20%;;cursor: pointer;position: fixed;min-width: 150px;z-index: 20;background-color: #fff;}
+.top{border: -1px solid red;position: -absolute;left: 0;text-align: center;}
+.nav_div{border:-1px solid blue;position: -absolute;top: 0;padding-left: 10%;margin-top: 25%;}
+.sub_nav{padding: 5%;font-weight: bold;}
+.div_title{border: #000000 -1px solid;padding: 30px;font-weight: bold;font-size: 1.2em;position: fixed;width: 100%;background-color: #fff;top: 0;z-index: 2;}
+.content{width: 80%;border: -1px solid #eee ;margin-left: 23%;min-width: 600px;}
+.content_top{border:-1px solid chartreuse ;display: flex;justify-content: center;margin-top: 80px;min-width: 600px;}
+.content_top>div{width: 30%;text-align: center;padding: 20px;}
+.sub_content{}
+.sub_top{font-weight: bold;}
+.sub_content>div{padding: 2%;border:-1px solid aquamarine ;}
+#main{height: 400px;}
+.nav_div span{margin-right: 10px;}
+.model{width: 100%;height: 100%;position: fixed;background-color: #000;opacity: 0.8;top: 0;left: 0;z-index: 10;display: none;}

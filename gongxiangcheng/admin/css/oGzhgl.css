@@ -1,0 +1,18 @@
+.list_div{border: -1px solid red;text-align: center;padding-right: 40px;}
+.table_tr>th{text-align: center;background-color: rgb(247, 236, 181);}
+#tbody_css td{height: 40px;line-height: 40px;padding: 0;margin: 0;cursor: pointer;}
+#tbody_css td:hover{color:#A94442;text-decoration: underline;}
+/*.table span{color: #fff;padding: ;border-radius: 5px;cursor: pointer;display: block;width:80px;display: block;height: 30px;line-height: 30px;margin-top: 5px;}*/
+.table span:hover{color: #000;}
+.open_span{background-color: #46B8DA;}
+/*.chakan_span{background-color: #FF0036;}*/
+.delete_span{background-color: #D43F3A;}
+.add_span{background-color: #F0AD4E;}
+input{width:80%;height: 30px;}
+.search{border:-1px solid #aaa;display: flex;padding: 10px 0 10px 0;min-width: 600px;justify-content: space-around;flex-flow: wrap;}
+.search div{border:-1px solid #F0AD4E;width:40%;min-width: -200px;}
+.search input{max-width:-150px;width: 70%;border: 0;outline: none;border-right: 1px solid #ccc;padding-left: 10px;}
+.sub_title span{border:solid #ccc  1px;border-bottom: 0;background-color:;color: #A94442;font-size: 12px;}
+.sub_search{border:solid 1px #ccc}
+.search span{border:solid -1px red;padding: 4px 10px 4px 10px;cursor: pointer;}
+.search span:hover{color: #A94442;}

@@ -1,0 +1,20 @@
+.list_div{border: -1px solid red;text-align: center;padding-right: 40px;}
+.table_tr th{text-align: center;background-color: rgb(247, 236, 181);}
+.table span{color: #FF0036;padding: 5px 20px 5px 20px;border-radius: 5px;cursor: pointer;display: block;width:80px}
+.table span:hover{color: #000;}
+.touxiang_css{width: 46px;height: 46px;border: -1px solid #aaa;-border-radius: 46px;}
+#table_big>tbody>tr>td{line-height: 46px;padding-bottom: 0;margin: 0;}
+#main{height: 300px;width: 100%;}
+.date_search{width: 300px;height: 30px;border: 1px solid #aaa;line-height: 30px;text-align: center;margin:10px 0 0 32px ;cursor: pointer;border-radius: 30px;}
+.date_search:hover{color: #FF0036;}
+.rili_div{margin-top: 10px;}
+.date_div{width: 50%;height: ;}
+.search_big{height: 120px;}
+.date_div{float: left;}
+.search{float: right;text-align: left;width: 50%;}
+.search input{width: 300px;height: 30px;}
+/*.open_span{background-color: #46B8DA;}
+.shutdown_span{background-color: #FF0036;}
+.delete_span{background-color: #D43F3A;}
+.add_span{background-color: #F0AD4E;}*/
+/*input{width:100px}*/
